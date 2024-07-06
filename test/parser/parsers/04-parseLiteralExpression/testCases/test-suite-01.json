@@ -1,0 +1,1171 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "\"some text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"with \"\"quoted text\"\" \"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"with \"\"quoted text\"\" \"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"with # hash\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"with # hash\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"with \"\"quoted text\"\" and # hash\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"with \"\"quoted text\"\" and # hash\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some #(cr) text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some #(cr) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some #(cf) text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some #(cf) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some #(tab) text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some #(tab) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some #(#) text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some #(#) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some #(000D) text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some #(000D) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some #(0000000D) text\"",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some #(0000000D) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(cf) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cf)#(cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(tab) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(#) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(#)#(#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(000D) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(0000000D) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(0000000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr,cr) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cf,cf) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cf,cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab,tab) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(#,#) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(#,#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D,000D) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D,0000000D) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D,0000000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr,cr) some text after\" repeated 2 times",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(#)#(tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(#)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cr)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(cf)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(cf)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(#)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(#)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cr)#(#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(tab)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(tab)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(#)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(#)#(#)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(#)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cf)#(#)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(cr)#(#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(cr)#(#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(#)#(tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(#)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(cf)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab)#(cf)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(#)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(#)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cf)#(tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cf)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(cf)#(tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab)#(cf)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cr)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(tab)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab)#(tab)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(tab)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(tab)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(#)#(cf) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(#)#(#)#(cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(cr)#(tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(cr)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(cr)#(tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cf)#(cr)#(tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(cr)#(cf) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(cr)#(cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(#)#(0000000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab)#(#)#(0000000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(cf)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(#)#(cf)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(cr)#(#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(cr)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(tab)#(cr)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(0000000D)#(#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(0000000D)#(#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(cr)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(0000000D)#(cr)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(cr)#(cf) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cf)#(cr)#(cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(000D)#(000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(cr)#(000D)#(000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(0000000D)#(cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before #(000D)#(0000000D)#(cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,#,tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(000D,#,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,cr,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,cf,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(0000000D,cf,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,#,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(0000000D,#,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,cr,#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,tab,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(0000000D,tab,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(#,#,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(#,#,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cf,#,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cf,#,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,cr,#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(000D,cr,#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,#,tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(000D,#,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,cf,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(tab,cf,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,#,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(000D,#,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cf,tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,cf,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,cf,tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(tab,cf,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,cr,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,tab,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(tab,tab,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,tab,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,tab,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(#,#,cf) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(#,#,cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,cr,tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(0000000D,cr,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cf,cr,tab) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cf,cr,tab) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,cr,cf) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(000D,cr,cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,#,0000000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(tab,#,0000000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(#,cf,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(#,cf,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,cr,#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,cr,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(tab,cr,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,0000000D,#) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(0000000D,0000000D,#) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,cr,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(0000000D,cr,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cf,cr,cf) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cf,cr,cf) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,000D,000D) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(cr,000D,000D) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,0000000D,cr) some text after\" mixed up",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "\"some text before  #(000D,0000000D,cr) some text after\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "123.123",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123.123",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123.123e67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123.123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123e67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123e67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123.123e+67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123.123e+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123e+67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123e+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123e+67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123e+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123.123e-67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123.123e-67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123e-67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123e-67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123e-67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123e-67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123e67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123e67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123.123E+67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123.123E+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123E+67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123E+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123E+67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123E+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123.123E-67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123.123E-67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": ".123E-67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": ".123E-67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "123E-67",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "123E-67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "0xffFF435",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "0xffFF435",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "0XffABD234",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "literalValue": "0XffABD234",
+                "literalType": "number-literal"
+            }
+        }
+    ]
+}

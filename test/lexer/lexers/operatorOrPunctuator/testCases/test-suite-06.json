@@ -1,0 +1,213 @@
+{
+    "description": "Single operator-or-punctuator followed by a number.",
+    "testCases": [
+        {
+            "input": ",123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "comma",
+                "value": ","
+            }
+        },
+        {
+            "input": ";123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "semicolon",
+                "value": ";"
+            }
+        },
+        {
+            "input": "=>123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "arrow",
+                "value": "=>"
+            }
+        },
+        {
+            "input": "=123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "equal",
+                "value": "="
+            }
+        },
+        {
+            "input": "<>123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "not-equal",
+                "value": "<>"
+            }
+        },
+        {
+            "input": "<=123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "less-than-or-equal",
+                "value": "<="
+            }
+        },
+        {
+            "input": ">=123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "greater-than-or-equal",
+                "value": ">="
+            }
+        },
+        {
+            "input": "<123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "less-than",
+                "value": "<"
+            }
+        },
+        {
+            "input": ">123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "greater-than",
+                "value": ">"
+            }
+        },
+        {
+            "input": "+123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "plus",
+                "value": "+"
+            }
+        },
+        {
+            "input": "-123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "minus",
+                "value": "-"
+            }
+        },
+        {
+            "input": "*123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "multiply",
+                "value": "*"
+            }
+        },
+        {
+            "input": "/123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "divide",
+                "value": "/"
+            }
+        },
+        {
+            "input": "&123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "ampersand",
+                "value": "&"
+            }
+        },
+        {
+            "input": "(123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "opening-parenthesis",
+                "value": "("
+            }
+        },
+        {
+            "input": ")123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "closing-parenthesis",
+                "value": ")"
+            }
+        },
+        {
+            "input": "[123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "opening-bracket",
+                "value": "["
+            }
+        },
+        {
+            "input": "]123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "closing-bracket",
+                "value": "]"
+            }
+        },
+        {
+            "input": "{123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "opening-brace",
+                "value": "{"
+            }
+        },
+        {
+            "input": "}123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "closing-brace",
+                "value": "}"
+            }
+        },
+        {
+            "input": "@123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "at-symbol",
+                "value": "@"
+            }
+        },
+        {
+            "input": "!123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "exclamation-mark",
+                "value": "!"
+            }
+        },
+        {
+            "input": "??123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "double-question-mark",
+                "value": "??"
+            }
+        },
+        {
+            "input": "?123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "question-mark",
+                "value": "?"
+            }
+        },
+        {
+            "input": "...123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "triple-dot",
+                "value": "..."
+            }
+        },
+        {
+            "input": "..123",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "double-dot",
+                "value": ".."
+            }
+        }
+    ]
+}

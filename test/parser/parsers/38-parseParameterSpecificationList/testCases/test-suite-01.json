@@ -1,0 +1,224 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "optional col1 as binary, optional col2 as any",
+            "output": {
+                "type": "parameter-specification-list",
+                "id": "parameter-specification-list-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "requiredParameterSpecificationList": [],
+                "optionalParameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-8",
+                            "startIndex": 8,
+                            "stopIndex": 9,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ],
+                "parameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-8",
+                            "startIndex": 8,
+                            "stopIndex": 9,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        },
+        {
+            "input": "col1 as binary, col2 as any",
+            "output": {
+                "type": "parameter-specification-list",
+                "id": "parameter-specification-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "requiredParameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": false
+                    }
+                ],
+                "optionalParameterSpecificationList": [],
+                "parameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": false
+                    }
+                ]
+            }
+        },
+        {
+            "input": "col1 as binary, col2 as any, optional col1 as binary, optional col2 as any",
+            "output": {
+                "type": "parameter-specification-list",
+                "id": "parameter-specification-list-0",
+                "startIndex": 0,
+                "stopIndex": 17,
+                "requiredParameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": false
+                    }
+                ],
+                "optionalParameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-11",
+                            "startIndex": 11,
+                            "stopIndex": 12,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-16",
+                            "startIndex": 16,
+                            "stopIndex": 17,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ],
+                "parameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-11",
+                            "startIndex": 11,
+                            "stopIndex": 12,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-16",
+                            "startIndex": 16,
+                            "stopIndex": 17,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

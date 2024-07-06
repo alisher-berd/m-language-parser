@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "123."
+        },
+        {
+            "input": "123binary followed by keyword"
+        },
+        {
+            "input": "1 + 1 + 123."
+        }
+    ]
+}

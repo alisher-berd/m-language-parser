@@ -1,0 +1,68 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "/* delimited comment */",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment */"
+            },
+            "description": ""
+        },
+        {
+            "input": "/* delimited comment with \ncarriage return */",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment with \ncarriage return */"
+            },
+            "description": "with carriage return"
+        },
+        {
+            "input": "/* delimited comment with \ncarriage return and multiple asterisks ******/",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment with \ncarriage return and multiple asterisks ******/"
+            },
+            "description": "with multiple asterisks"
+        },
+        {
+            "input": "/* delimited comment with \ncarriage return \n/* and sections */",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment with \ncarriage return \n/* and sections */"
+            },
+            "description": "with sections"
+        },
+        {
+            "input": "/* delimited comment with \ncarriage return \n/* and first and\n    /* second section */",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment with \ncarriage return \n/* and first and\n    /* second section */"
+            },
+            "description": "with multiple sections"
+        },
+        {
+            "input": "/* delimited comment with \ncarriage return ///////\n/* and noise \n////*/",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment with \ncarriage return ///////\n/* and noise \n////*/"
+            },
+            "description": "with repeated slashes and section"
+        },
+        {
+            "input": "/* delimited comment with \na really long body\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n*/",
+            "output": {
+                "tokenType": "comment",
+                "token": "delimited-comment",
+                "value": "/* delimited comment with \na really long body\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n/* some comments here some comments here some comments here some comments here some comments here\n*/"
+            },
+            "description": "very long comment"
+        }
+    ]
+}

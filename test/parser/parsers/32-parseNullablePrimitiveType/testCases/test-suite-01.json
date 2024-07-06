@@ -1,0 +1,27 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "nullable any",
+            "output": {
+                "type": "nullable-primitive-type",
+                "id": "nullable-primitive-type-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "nullableFlag": true,
+                "primitiveType": "any"
+            }
+        },
+        {
+            "input": "any",
+            "output": {
+                "type": "nullable-primitive-type",
+                "id": "nullable-primitive-type-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "nullableFlag": false,
+                "primitiveType": "any"
+            }
+        }
+    ]
+}

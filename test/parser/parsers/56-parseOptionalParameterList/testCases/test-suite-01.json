@@ -1,0 +1,34 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "optional col1 as nullable binary, optional col2 as any, optional col3",
+            "output": {
+                "type": "optional-parameter-list",
+                "id": "optional-parameter-list-0",
+                "startIndex": 0,
+                "stopIndex": 13,
+                "optionalParameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col3",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

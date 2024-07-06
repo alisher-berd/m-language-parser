@@ -1,0 +1,53 @@
+{
+    "name": "m-language-parser",
+    "version": "1.0.0",
+    "description": "Power Query (M formula language) parser.",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "jest --silent",
+        "test:coverage": "jest --silent --coverage",
+        "test:lexer": "jest --silent --testPathPattern=test/lexer",
+        "test:parser": "jest --silent --testPathPattern=test/parser",
+        "lint": "eslint src test",
+        "lint:fix": "eslint --fix src test",
+        "prettier": "prettier --check src test",
+        "prettier:fix": "prettier --write src test",
+        "format": "npm run prettier:fix && npm run lint:fix"
+    },
+    "keywords": [
+        "power query",
+        "m language",
+        "power bi"
+    ],
+    "author": "Alisher Berdimuratov",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alisher-berd/m-language-parser.git"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.jsx?$": "babel-jest"
+        },
+        "coveragePathIgnorePatterns": [
+            "/node_modules/",
+            "/test/"
+        ]
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "devDependencies": {
+        "@babel/core": "^7.24.6",
+        "@babel/preset-env": "^7.24.6",
+        "@eslint/js": "^9.4.0",
+        "babel-jest": "^29.7.0",
+        "eslint": "^9.4.0",
+        "eslint-config-prettier": "^9.1.0",
+        "flatted": "^3.3.1",
+        "globals": "^15.4.0",
+        "jest": "^29.7.0",
+        "prettier": "3.3.1"
+    }
+}

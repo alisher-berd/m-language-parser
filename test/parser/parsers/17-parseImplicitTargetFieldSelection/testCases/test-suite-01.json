@@ -1,0 +1,60 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "[columnName]?",
+            "output": {
+                "type": "implicit-target-field-selection",
+                "id": "implicit-target-field-selection-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fieldName": "columnName",
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[let]?",
+            "output": {
+                "type": "implicit-target-field-selection",
+                "id": "implicit-target-field-selection-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fieldName": "let",
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[column name]",
+            "output": {
+                "type": "implicit-target-field-selection",
+                "id": "implicit-target-field-selection-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fieldName": "column name",
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "[tableName.columnName]?",
+            "output": {
+                "type": "implicit-target-field-selection",
+                "id": "implicit-target-field-selection-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fieldName": "tableName.columnName",
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[#\"Column name\"]",
+            "output": {
+                "type": "implicit-target-field-selection",
+                "id": "implicit-target-field-selection-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "fieldName": "#\"Column name\"",
+                "isOptionalSelection": false
+            }
+        }
+    ]
+}

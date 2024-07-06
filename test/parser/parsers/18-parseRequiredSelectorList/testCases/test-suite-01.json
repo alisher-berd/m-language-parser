@@ -1,0 +1,58 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "[columnName], [columnName]",
+            "output": {
+                "type": "required-selector-list",
+                "id": "required-selector-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "requiredSelectorList": ["columnName", "columnName"]
+            }
+        },
+        {
+            "input": "[let], [let]",
+            "output": {
+                "type": "required-selector-list",
+                "id": "required-selector-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "requiredSelectorList": ["let", "let"]
+            }
+        },
+        {
+            "input": "[column name], [column name]",
+            "output": {
+                "type": "required-selector-list",
+                "id": "required-selector-list-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "requiredSelectorList": ["column name", "column name"]
+            }
+        },
+        {
+            "input": "[tableName.columnName], [tableName.columnName]",
+            "output": {
+                "type": "required-selector-list",
+                "id": "required-selector-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "requiredSelectorList": [
+                    "tableName.columnName",
+                    "tableName.columnName"
+                ]
+            }
+        },
+        {
+            "input": "[#\"Column name\"], [#\"Column name\"]",
+            "output": {
+                "type": "required-selector-list",
+                "id": "required-selector-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "requiredSelectorList": ["#\"Column name\"", "#\"Column name\""]
+            }
+        }
+    ]
+}

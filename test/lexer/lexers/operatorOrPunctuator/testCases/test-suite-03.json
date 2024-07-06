@@ -1,0 +1,213 @@
+{
+    "description": "Single operator-or-punctuator followed by a space and text.",
+    "testCases": [
+        {
+            "input": ", someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "comma",
+                "value": ","
+            }
+        },
+        {
+            "input": "; someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "semicolon",
+                "value": ";"
+            }
+        },
+        {
+            "input": "=> someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "arrow",
+                "value": "=>"
+            }
+        },
+        {
+            "input": "= someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "equal",
+                "value": "="
+            }
+        },
+        {
+            "input": "<> someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "not-equal",
+                "value": "<>"
+            }
+        },
+        {
+            "input": "<= someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "less-than-or-equal",
+                "value": "<="
+            }
+        },
+        {
+            "input": ">= someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "greater-than-or-equal",
+                "value": ">="
+            }
+        },
+        {
+            "input": "< someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "less-than",
+                "value": "<"
+            }
+        },
+        {
+            "input": "> someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "greater-than",
+                "value": ">"
+            }
+        },
+        {
+            "input": "+ someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "plus",
+                "value": "+"
+            }
+        },
+        {
+            "input": "- someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "minus",
+                "value": "-"
+            }
+        },
+        {
+            "input": "* someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "multiply",
+                "value": "*"
+            }
+        },
+        {
+            "input": "/ someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "divide",
+                "value": "/"
+            }
+        },
+        {
+            "input": "& someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "ampersand",
+                "value": "&"
+            }
+        },
+        {
+            "input": "( someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "opening-parenthesis",
+                "value": "("
+            }
+        },
+        {
+            "input": ") someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "closing-parenthesis",
+                "value": ")"
+            }
+        },
+        {
+            "input": "[ someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "opening-bracket",
+                "value": "["
+            }
+        },
+        {
+            "input": "] someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "closing-bracket",
+                "value": "]"
+            }
+        },
+        {
+            "input": "{ someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "opening-brace",
+                "value": "{"
+            }
+        },
+        {
+            "input": "} someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "closing-brace",
+                "value": "}"
+            }
+        },
+        {
+            "input": "@ someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "at-symbol",
+                "value": "@"
+            }
+        },
+        {
+            "input": "! someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "exclamation-mark",
+                "value": "!"
+            }
+        },
+        {
+            "input": "?? someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "double-question-mark",
+                "value": "??"
+            }
+        },
+        {
+            "input": "? someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "question-mark",
+                "value": "?"
+            }
+        },
+        {
+            "input": "... someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "triple-dot",
+                "value": "..."
+            }
+        },
+        {
+            "input": ".. someText",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "double-dot",
+                "value": ".."
+            }
+        }
+    ]
+}

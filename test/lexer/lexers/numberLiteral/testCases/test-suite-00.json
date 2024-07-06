@@ -1,0 +1,357 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "123.123",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123"
+            }
+        },
+        {
+            "input": ".123",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123"
+            }
+        },
+        {
+            "input": "123",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123"
+            }
+        },
+        {
+            "input": "123.123e67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123e67"
+            }
+        },
+        {
+            "input": ".123e67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e67"
+            }
+        },
+        {
+            "input": "123e67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e67"
+            }
+        },
+        {
+            "input": "123.123e+67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123e+67"
+            }
+        },
+        {
+            "input": ".123e+67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e+67"
+            }
+        },
+        {
+            "input": "123e+67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e+67"
+            }
+        },
+        {
+            "input": "123.123e-67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123e-67"
+            }
+        },
+        {
+            "input": ".123e-67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e-67"
+            }
+        },
+        {
+            "input": "123e-67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e-67"
+            }
+        },
+        {
+            "input": ".123e67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e67"
+            }
+        },
+        {
+            "input": "123e67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e67"
+            }
+        },
+        {
+            "input": "123.123E+67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123E+67"
+            }
+        },
+        {
+            "input": ".123E+67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123E+67"
+            }
+        },
+        {
+            "input": "123E+67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123E+67"
+            }
+        },
+        {
+            "input": "123.123E-67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123E-67"
+            }
+        },
+        {
+            "input": ".123E-67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123E-67"
+            }
+        },
+        {
+            "input": "123E-67",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123E-67"
+            }
+        },
+        {
+            "input": "0xffFF435",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "0xffFF435"
+            }
+        },
+        {
+            "input": "0XffABD234",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "0XffABD234"
+            }
+        },
+        {
+            "input": "123.123 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123"
+            }
+        },
+        {
+            "input": ".123 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123"
+            }
+        },
+        {
+            "input": "123 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123"
+            }
+        },
+        {
+            "input": "123.123e67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123e67"
+            }
+        },
+        {
+            "input": ".123e67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e67"
+            }
+        },
+        {
+            "input": "123e67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e67"
+            }
+        },
+        {
+            "input": "123.123e+67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123e+67"
+            }
+        },
+        {
+            "input": ".123e+67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e+67"
+            }
+        },
+        {
+            "input": "123e+67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e+67"
+            }
+        },
+        {
+            "input": "123.123e-67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123e-67"
+            }
+        },
+        {
+            "input": ".123e-67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e-67"
+            }
+        },
+        {
+            "input": "123e-67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e-67"
+            }
+        },
+        {
+            "input": ".123e67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123e67"
+            }
+        },
+        {
+            "input": "123e67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123e67"
+            }
+        },
+        {
+            "input": "123.123E+67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123E+67"
+            }
+        },
+        {
+            "input": ".123E+67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123E+67"
+            }
+        },
+        {
+            "input": "123E+67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123E+67"
+            }
+        },
+        {
+            "input": "123.123E-67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123.123E-67"
+            }
+        },
+        {
+            "input": ".123E-67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": ".123E-67"
+            }
+        },
+        {
+            "input": "123E-67 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "123E-67"
+            }
+        },
+        {
+            "input": "0xffFF435 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "0xffFF435"
+            }
+        },
+        {
+            "input": "0XffABD234 and some text",
+            "output": {
+                "tokenType": "literal",
+                "token": "number-literal",
+                "value": "0XffABD234"
+            }
+        }
+    ]
+}

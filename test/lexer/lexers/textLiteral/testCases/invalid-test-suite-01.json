@@ -1,0 +1,13 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "\"text with #( \"",
+            "description": "#( not allowed"
+        },
+        {
+            "input": "\"text with \"( \"",
+            "description": "\"( not allowed"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "columnName = 1000 + 10",
+            "output": {
+                "type": "variable",
+                "id": "variable-0",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "variableName": "columnName",
+                "expression": {
+                    "type": "additive-expression",
+                    "id": "additive-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 5,
+                    "leftOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-2",
+                        "startIndex": 2,
+                        "stopIndex": 3,
+                        "literalValue": "1000",
+                        "literalType": "number-literal"
+                    },
+                    "operator": "plus",
+                    "rightOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-4",
+                        "startIndex": 4,
+                        "stopIndex": 5,
+                        "literalValue": "10",
+                        "literalType": "number-literal"
+                    }
+                }
+            }
+        },
+        {
+            "input": "columnName = 1000",
+            "output": {
+                "type": "variable",
+                "id": "variable-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "variableName": "columnName",
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 3,
+                    "literalValue": "1000",
+                    "literalType": "number-literal"
+                }
+            }
+        }
+    ]
+}

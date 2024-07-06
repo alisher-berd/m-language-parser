@@ -1,0 +1,43 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "colName1 = binary, optional colName2, optional colName3 = any",
+            "output": {
+                "type": "field-specification-list",
+                "id": "field-specification-list-0",
+                "startIndex": 0,
+                "stopIndex": 11,
+                "fieldSpecificationList": [
+                    {
+                        "fieldName": "colName1",
+                        "fieldType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "fieldName": "colName2",
+                        "fieldType": null,
+                        "isOptional": true
+                    },
+                    {
+                        "fieldName": "colName3",
+                        "fieldType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-10",
+                            "startIndex": 10,
+                            "stopIndex": 11,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

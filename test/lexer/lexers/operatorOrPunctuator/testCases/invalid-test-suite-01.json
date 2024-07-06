@@ -1,0 +1,15 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": ".",
+            "description": "dot is not an operator-or-punctuator"
+        },
+        {
+            "input": "someText"
+        },
+        {
+            "input": "123"
+        }
+    ]
+}

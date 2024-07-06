@@ -1,0 +1,23 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "columnName = 2",
+            "output": {
+                "type": "field",
+                "id": "field-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "fieldName": "columnName",
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 3,
+                    "literalValue": "2",
+                    "literalType": "number-literal"
+                }
+            }
+        }
+    ]
+}

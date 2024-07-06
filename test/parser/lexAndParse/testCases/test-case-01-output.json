@@ -1,0 +1,1250 @@
+{
+    "type": "let-expression",
+    "id": "let-expression-0",
+    "startIndex": 0,
+    "stopIndex": 256,
+    "variableList": [
+        {
+            "variableName": "Source",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-4",
+                "startIndex": 4,
+                "stopIndex": 7,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-3",
+                    "startIndex": 3,
+                    "stopIndex": 4,
+                    "identifierName": "Exchange.Contents",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-5",
+                        "startIndex": 5,
+                        "stopIndex": 6,
+                        "literalValue": "\"xyz@contoso.com\"",
+                        "literalType": "text-literal"
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "Mail1",
+            "expression": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-18",
+                "startIndex": 18,
+                "stopIndex": 21,
+                "selectedPrimaryExpression": {
+                    "type": "item-access-expression",
+                    "id": "item-access-expression-11",
+                    "startIndex": 11,
+                    "stopIndex": 18,
+                    "selectedPrimaryExpression": {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-10",
+                        "startIndex": 10,
+                        "stopIndex": 11,
+                        "identifierName": "Source",
+                        "isInclusive": false
+                    },
+                    "itemSelector": {
+                        "type": "record-expression",
+                        "id": "record-expression-12",
+                        "startIndex": 12,
+                        "stopIndex": 17,
+                        "fieldList": [
+                            {
+                                "fieldName": "Name",
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-15",
+                                    "startIndex": 15,
+                                    "stopIndex": 16,
+                                    "literalValue": "\"Mail\"",
+                                    "literalType": "text-literal"
+                                }
+                            }
+                        ]
+                    },
+                    "isOptionalSelection": false
+                },
+                "implicitTargetFieldSelection": "Data",
+                "implicitTargetProjection": null,
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "variableName": "#\"Expanded Sender\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-25",
+                "startIndex": 25,
+                "stopIndex": 38,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-24",
+                    "startIndex": 24,
+                    "stopIndex": 25,
+                    "identifierName": "Table.ExpandRecordColumn",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-26",
+                        "startIndex": 26,
+                        "stopIndex": 27,
+                        "identifierName": "Mail1",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-28",
+                        "startIndex": 28,
+                        "stopIndex": 29,
+                        "literalValue": "\"Sender\"",
+                        "literalType": "text-literal"
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-30",
+                        "startIndex": 30,
+                        "stopIndex": 33,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-31",
+                                "startIndex": 31,
+                                "stopIndex": 32,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-31",
+                                    "startIndex": 31,
+                                    "stopIndex": 32,
+                                    "literalValue": "\"Name\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-34",
+                        "startIndex": 34,
+                        "stopIndex": 37,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-35",
+                                "startIndex": 35,
+                                "stopIndex": 36,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-35",
+                                    "startIndex": 35,
+                                    "stopIndex": 36,
+                                    "literalValue": "\"Name\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Filtered Rows\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-42",
+                "startIndex": 42,
+                "stopIndex": 54,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-41",
+                    "startIndex": 41,
+                    "stopIndex": 42,
+                    "identifierName": "Table.SelectRows",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-43",
+                        "startIndex": 43,
+                        "stopIndex": 44,
+                        "identifierName": "#\"Expanded Sender\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "each-expression",
+                        "id": "each-expression-45",
+                        "startIndex": 45,
+                        "stopIndex": 53,
+                        "expression": {
+                            "type": "equality-expression",
+                            "id": "equality-expression-47",
+                            "startIndex": 46,
+                            "stopIndex": 53,
+                            "leftOperand": {
+                                "type": "field-access-expression",
+                                "id": "field-access-expression-47",
+                                "startIndex": 47,
+                                "stopIndex": 50,
+                                "selectedPrimaryExpression": null,
+                                "implicitTargetFieldSelection": "HasAttachments",
+                                "implicitTargetProjection": null,
+                                "isOptionalSelection": false
+                            },
+                            "operator": "equal",
+                            "rightOperand": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-51",
+                                "startIndex": 51,
+                                "stopIndex": 52,
+                                "literalValue": "true",
+                                "literalType": "logical-literal"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Filtered Rows1\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-58",
+                "startIndex": 58,
+                "stopIndex": 79,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-57",
+                    "startIndex": 57,
+                    "stopIndex": 58,
+                    "identifierName": "Table.SelectRows",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-59",
+                        "startIndex": 59,
+                        "stopIndex": 60,
+                        "identifierName": "#\"Filtered Rows\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "each-expression",
+                        "id": "each-expression-61",
+                        "startIndex": 61,
+                        "stopIndex": 78,
+                        "expression": {
+                            "type": "logical-and-expression",
+                            "id": "logical-and-expression-69",
+                            "startIndex": 69,
+                            "stopIndex": 78,
+                            "leftOperand": {
+                                "type": "equality-expression",
+                                "id": "equality-expression-63",
+                                "startIndex": 62,
+                                "stopIndex": 69,
+                                "leftOperand": {
+                                    "type": "field-access-expression",
+                                    "id": "field-access-expression-63",
+                                    "startIndex": 63,
+                                    "stopIndex": 66,
+                                    "selectedPrimaryExpression": null,
+                                    "implicitTargetFieldSelection": "Subject",
+                                    "implicitTargetProjection": null,
+                                    "isOptionalSelection": false
+                                },
+                                "operator": "equal",
+                                "rightOperand": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-67",
+                                    "startIndex": 67,
+                                    "stopIndex": 68,
+                                    "literalValue": "\"sample files for email PQ test\"",
+                                    "literalType": "text-literal"
+                                }
+                            },
+                            "rightOperand": {
+                                "type": "equality-expression",
+                                "id": "equality-expression-71",
+                                "startIndex": 70,
+                                "stopIndex": 78,
+                                "leftOperand": {
+                                    "type": "field-access-expression",
+                                    "id": "field-access-expression-71",
+                                    "startIndex": 71,
+                                    "stopIndex": 75,
+                                    "selectedPrimaryExpression": null,
+                                    "implicitTargetFieldSelection": "Folder Path",
+                                    "implicitTargetProjection": null,
+                                    "isOptionalSelection": false
+                                },
+                                "operator": "equal",
+                                "rightOperand": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-76",
+                                    "startIndex": 76,
+                                    "stopIndex": 77,
+                                    "literalValue": "\"\\Inbox\\\"",
+                                    "literalType": "text-literal"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Removed Other Columns\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-83",
+                "startIndex": 83,
+                "stopIndex": 90,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-82",
+                    "startIndex": 82,
+                    "stopIndex": 83,
+                    "identifierName": "Table.SelectColumns",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-84",
+                        "startIndex": 84,
+                        "stopIndex": 85,
+                        "identifierName": "#\"Filtered Rows1\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-86",
+                        "startIndex": 86,
+                        "stopIndex": 89,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-87",
+                                "startIndex": 87,
+                                "stopIndex": 88,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-87",
+                                    "startIndex": 87,
+                                    "stopIndex": 88,
+                                    "literalValue": "\"Attachments\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Expanded Attachments\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-94",
+                "startIndex": 94,
+                "stopIndex": 111,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-93",
+                    "startIndex": 93,
+                    "stopIndex": 94,
+                    "identifierName": "Table.ExpandTableColumn",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-95",
+                        "startIndex": 95,
+                        "stopIndex": 96,
+                        "identifierName": "#\"Removed Other Columns\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-97",
+                        "startIndex": 97,
+                        "stopIndex": 98,
+                        "literalValue": "\"Attachments\"",
+                        "literalType": "text-literal"
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-99",
+                        "startIndex": 99,
+                        "stopIndex": 104,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-100",
+                                "startIndex": 100,
+                                "stopIndex": 101,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-100",
+                                    "startIndex": 100,
+                                    "stopIndex": 101,
+                                    "literalValue": "\"Name\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-102",
+                                "startIndex": 102,
+                                "stopIndex": 103,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-102",
+                                    "startIndex": 102,
+                                    "stopIndex": 103,
+                                    "literalValue": "\"AttachmentContent\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-105",
+                        "startIndex": 105,
+                        "stopIndex": 110,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-106",
+                                "startIndex": 106,
+                                "stopIndex": 107,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-106",
+                                    "startIndex": 106,
+                                    "stopIndex": 107,
+                                    "literalValue": "\"Name\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-108",
+                                "startIndex": 108,
+                                "stopIndex": 109,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-108",
+                                    "startIndex": 108,
+                                    "stopIndex": 109,
+                                    "literalValue": "\"AttachmentContent\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Filtered Hidden Files1\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-115",
+                "startIndex": 115,
+                "stopIndex": 130,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-114",
+                    "startIndex": 114,
+                    "stopIndex": 115,
+                    "identifierName": "Table.SelectRows",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-116",
+                        "startIndex": 116,
+                        "stopIndex": 117,
+                        "identifierName": "#\"Expanded Attachments\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "each-expression",
+                        "id": "each-expression-118",
+                        "startIndex": 118,
+                        "stopIndex": 129,
+                        "expression": {
+                            "type": "equality-expression",
+                            "id": "equality-expression-119",
+                            "startIndex": 119,
+                            "stopIndex": 129,
+                            "leftOperand": {
+                                "type": "field-access-expression",
+                                "id": "field-access-expression-123",
+                                "startIndex": 123,
+                                "stopIndex": 127,
+                                "selectedPrimaryExpression": {
+                                    "type": "field-access-expression",
+                                    "id": "field-access-expression-119",
+                                    "startIndex": 119,
+                                    "stopIndex": 123,
+                                    "selectedPrimaryExpression": null,
+                                    "implicitTargetFieldSelection": "Attributes",
+                                    "implicitTargetProjection": null,
+                                    "isOptionalSelection": true
+                                },
+                                "implicitTargetFieldSelection": "Hidden",
+                                "implicitTargetProjection": null,
+                                "isOptionalSelection": true
+                            },
+                            "operator": "not-equal",
+                            "rightOperand": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-128",
+                                "startIndex": 128,
+                                "stopIndex": 129,
+                                "literalValue": "true",
+                                "literalType": "logical-literal"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Invoke Custom Function1\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-134",
+                "startIndex": 134,
+                "stopIndex": 147,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-133",
+                    "startIndex": 133,
+                    "stopIndex": 134,
+                    "identifierName": "Table.AddColumn",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-135",
+                        "startIndex": 135,
+                        "stopIndex": 136,
+                        "identifierName": "#\"Filtered Hidden Files1\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-137",
+                        "startIndex": 137,
+                        "stopIndex": 138,
+                        "literalValue": "\"Transform File from Mail\"",
+                        "literalType": "text-literal"
+                    },
+                    {
+                        "type": "each-expression",
+                        "id": "each-expression-139",
+                        "startIndex": 139,
+                        "stopIndex": 146,
+                        "expression": {
+                            "type": "invoke-expression",
+                            "id": "invoke-expression-141",
+                            "startIndex": 141,
+                            "stopIndex": 146,
+                            "invokedPrimaryExpression": {
+                                "type": "identifier-expression",
+                                "id": "identifier-expression-140",
+                                "startIndex": 140,
+                                "stopIndex": 141,
+                                "identifierName": "#\"Transform File from Mail\"",
+                                "isInclusive": false
+                            },
+                            "argumentList": [
+                                {
+                                    "type": "field-access-expression",
+                                    "id": "field-access-expression-142",
+                                    "startIndex": 142,
+                                    "stopIndex": 145,
+                                    "selectedPrimaryExpression": null,
+                                    "implicitTargetFieldSelection": "AttachmentContent",
+                                    "implicitTargetProjection": null,
+                                    "isOptionalSelection": false
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Removed Other Columns1\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-151",
+                "startIndex": 151,
+                "stopIndex": 158,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-150",
+                    "startIndex": 150,
+                    "stopIndex": 151,
+                    "identifierName": "Table.SelectColumns",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-152",
+                        "startIndex": 152,
+                        "stopIndex": 153,
+                        "identifierName": "#\"Invoke Custom Function1\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-154",
+                        "startIndex": 154,
+                        "stopIndex": 157,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-155",
+                                "startIndex": 155,
+                                "stopIndex": 156,
+                                "expression": {
+                                    "type": "literal-expression",
+                                    "id": "literal-expression-155",
+                                    "startIndex": 155,
+                                    "stopIndex": 156,
+                                    "literalValue": "\"Transform File from Mail\"",
+                                    "literalType": "text-literal"
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Expanded Table Column1\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-162",
+                "startIndex": 162,
+                "stopIndex": 175,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-161",
+                    "startIndex": 161,
+                    "stopIndex": 162,
+                    "identifierName": "Table.ExpandTableColumn",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-163",
+                        "startIndex": 163,
+                        "stopIndex": 164,
+                        "identifierName": "#\"Removed Other Columns1\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-165",
+                        "startIndex": 165,
+                        "stopIndex": 166,
+                        "literalValue": "\"Transform File from Mail\"",
+                        "literalType": "text-literal"
+                    },
+                    {
+                        "type": "invoke-expression",
+                        "id": "invoke-expression-168",
+                        "startIndex": 168,
+                        "stopIndex": 174,
+                        "invokedPrimaryExpression": {
+                            "type": "identifier-expression",
+                            "id": "identifier-expression-167",
+                            "startIndex": 167,
+                            "stopIndex": 168,
+                            "identifierName": "Table.ColumnNames",
+                            "isInclusive": false
+                        },
+                        "argumentList": [
+                            {
+                                "type": "invoke-expression",
+                                "id": "invoke-expression-170",
+                                "startIndex": 170,
+                                "stopIndex": 173,
+                                "invokedPrimaryExpression": {
+                                    "type": "identifier-expression",
+                                    "id": "identifier-expression-169",
+                                    "startIndex": 169,
+                                    "stopIndex": 170,
+                                    "identifierName": "#\"Transform File from Mail\"",
+                                    "isInclusive": false
+                                },
+                                "argumentList": [
+                                    {
+                                        "type": "identifier-expression",
+                                        "id": "identifier-expression-171",
+                                        "startIndex": 171,
+                                        "stopIndex": 172,
+                                        "identifierName": "#\"Sample File\"",
+                                        "isInclusive": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "variableName": "#\"Changed Type\"",
+            "expression": {
+                "type": "invoke-expression",
+                "id": "invoke-expression-179",
+                "startIndex": 179,
+                "stopIndex": 254,
+                "invokedPrimaryExpression": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-178",
+                    "startIndex": 178,
+                    "stopIndex": 179,
+                    "identifierName": "Table.TransformColumnTypes",
+                    "isInclusive": false
+                },
+                "argumentList": [
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-180",
+                        "startIndex": 180,
+                        "stopIndex": 181,
+                        "identifierName": "#\"Expanded Table Column1\"",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "list-expression",
+                        "id": "list-expression-182",
+                        "startIndex": 182,
+                        "stopIndex": 253,
+                        "itemList": [
+                            {
+                                "type": "item",
+                                "id": "item-183",
+                                "startIndex": 183,
+                                "stopIndex": 189,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-183",
+                                    "startIndex": 183,
+                                    "stopIndex": 189,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-184",
+                                            "startIndex": 184,
+                                            "stopIndex": 185,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-184",
+                                                "startIndex": 184,
+                                                "stopIndex": 185,
+                                                "literalValue": "\"Column1\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-186",
+                                            "startIndex": 186,
+                                            "stopIndex": 188,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-187",
+                                                "startIndex": 187,
+                                                "stopIndex": 188,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-190",
+                                "startIndex": 190,
+                                "stopIndex": 196,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-190",
+                                    "startIndex": 190,
+                                    "stopIndex": 196,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-191",
+                                            "startIndex": 191,
+                                            "stopIndex": 192,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-191",
+                                                "startIndex": 191,
+                                                "stopIndex": 192,
+                                                "literalValue": "\"Column2\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-193",
+                                            "startIndex": 193,
+                                            "stopIndex": 195,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-194",
+                                                "startIndex": 194,
+                                                "stopIndex": 195,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-197",
+                                "startIndex": 197,
+                                "stopIndex": 203,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-197",
+                                    "startIndex": 197,
+                                    "stopIndex": 203,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-198",
+                                            "startIndex": 198,
+                                            "stopIndex": 199,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-198",
+                                                "startIndex": 198,
+                                                "stopIndex": 199,
+                                                "literalValue": "\"Column3\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-200",
+                                            "startIndex": 200,
+                                            "stopIndex": 202,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-201",
+                                                "startIndex": 201,
+                                                "stopIndex": 202,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-204",
+                                "startIndex": 204,
+                                "stopIndex": 210,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-204",
+                                    "startIndex": 204,
+                                    "stopIndex": 210,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-205",
+                                            "startIndex": 205,
+                                            "stopIndex": 206,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-205",
+                                                "startIndex": 205,
+                                                "stopIndex": 206,
+                                                "literalValue": "\"Column4\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-207",
+                                            "startIndex": 207,
+                                            "stopIndex": 209,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-208",
+                                                "startIndex": 208,
+                                                "stopIndex": 209,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-211",
+                                "startIndex": 211,
+                                "stopIndex": 217,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-211",
+                                    "startIndex": 211,
+                                    "stopIndex": 217,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-212",
+                                            "startIndex": 212,
+                                            "stopIndex": 213,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-212",
+                                                "startIndex": 212,
+                                                "stopIndex": 213,
+                                                "literalValue": "\"Column5\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-214",
+                                            "startIndex": 214,
+                                            "stopIndex": 216,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-215",
+                                                "startIndex": 215,
+                                                "stopIndex": 216,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-218",
+                                "startIndex": 218,
+                                "stopIndex": 224,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-218",
+                                    "startIndex": 218,
+                                    "stopIndex": 224,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-219",
+                                            "startIndex": 219,
+                                            "stopIndex": 220,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-219",
+                                                "startIndex": 219,
+                                                "stopIndex": 220,
+                                                "literalValue": "\"Column6\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-221",
+                                            "startIndex": 221,
+                                            "stopIndex": 223,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-222",
+                                                "startIndex": 222,
+                                                "stopIndex": 223,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-225",
+                                "startIndex": 225,
+                                "stopIndex": 231,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-225",
+                                    "startIndex": 225,
+                                    "stopIndex": 231,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-226",
+                                            "startIndex": 226,
+                                            "stopIndex": 227,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-226",
+                                                "startIndex": 226,
+                                                "stopIndex": 227,
+                                                "literalValue": "\"Column7\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-228",
+                                            "startIndex": 228,
+                                            "stopIndex": 230,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-229",
+                                                "startIndex": 229,
+                                                "stopIndex": 230,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-232",
+                                "startIndex": 232,
+                                "stopIndex": 238,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-232",
+                                    "startIndex": 232,
+                                    "stopIndex": 238,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-233",
+                                            "startIndex": 233,
+                                            "stopIndex": 234,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-233",
+                                                "startIndex": 233,
+                                                "stopIndex": 234,
+                                                "literalValue": "\"Column8\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-235",
+                                            "startIndex": 235,
+                                            "stopIndex": 237,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-236",
+                                                "startIndex": 236,
+                                                "stopIndex": 237,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-239",
+                                "startIndex": 239,
+                                "stopIndex": 245,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-239",
+                                    "startIndex": 239,
+                                    "stopIndex": 245,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-240",
+                                            "startIndex": 240,
+                                            "stopIndex": 241,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-240",
+                                                "startIndex": 240,
+                                                "stopIndex": 241,
+                                                "literalValue": "\"Column9\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-242",
+                                            "startIndex": 242,
+                                            "stopIndex": 244,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-243",
+                                                "startIndex": 243,
+                                                "stopIndex": 244,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            },
+                            {
+                                "type": "item",
+                                "id": "item-246",
+                                "startIndex": 246,
+                                "stopIndex": 252,
+                                "expression": {
+                                    "type": "list-expression",
+                                    "id": "list-expression-246",
+                                    "startIndex": 246,
+                                    "stopIndex": 252,
+                                    "itemList": [
+                                        {
+                                            "type": "item",
+                                            "id": "item-247",
+                                            "startIndex": 247,
+                                            "stopIndex": 248,
+                                            "expression": {
+                                                "type": "literal-expression",
+                                                "id": "literal-expression-247",
+                                                "startIndex": 247,
+                                                "stopIndex": 248,
+                                                "literalValue": "\"Column10\"",
+                                                "literalType": "text-literal"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        },
+                                        {
+                                            "type": "item",
+                                            "id": "item-249",
+                                            "startIndex": 249,
+                                            "stopIndex": 251,
+                                            "expression": {
+                                                "type": "primitive-type",
+                                                "id": "primitive-type-250",
+                                                "startIndex": 250,
+                                                "stopIndex": 251,
+                                                "primitiveType": "text"
+                                            },
+                                            "isSequenceItem": false,
+                                            "secondExpression": null
+                                        }
+                                    ]
+                                },
+                                "isSequenceItem": false,
+                                "secondExpression": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "outputExpression": {
+        "type": "identifier-expression",
+        "id": "identifier-expression-255",
+        "startIndex": 255,
+        "stopIndex": 256,
+        "identifierName": "#\"Changed Type\"",
+        "isInclusive": false
+    }
+}

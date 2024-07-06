@@ -1,0 +1,15 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "columnName",
+            "output": {
+                "type": "variable-name",
+                "id": "variable-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "variableName": "columnName"
+            }
+        }
+    ]
+}

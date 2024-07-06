@@ -1,0 +1,23 @@
+{
+    "description": "Corner cases.",
+    "testCases": [
+        {
+            "description": "Lex as a triple-dot",
+            "input": ".....",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "triple-dot",
+                "value": "..."
+            }
+        },
+        {
+            "description": "Lex as a double-question-mark",
+            "input": "???",
+            "output": {
+                "tokenType": "operator-or-punctuator",
+                "token": "double-question-mark",
+                "value": "??"
+            }
+        }
+    ]
+}

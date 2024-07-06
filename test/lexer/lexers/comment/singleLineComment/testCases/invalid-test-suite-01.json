@@ -1,0 +1,23 @@
+{
+    "description": "Input begins with space.",
+    "testCases": [
+        {
+            "input": " // some comment"
+        },
+        {
+            "input": " // some comment\n followed by CARRIAGE RETURN"
+        },
+        {
+            "input": " // some comment\n followed by LINE FEED"
+        },
+        {
+            "input": " // some comment followed by NEXT LINE"
+        },
+        {
+            "input": " // some comment  followed by LINE SEPARATOR"
+        },
+        {
+            "input": " // some comment  followed by PARAGRAPH SEPARATOR"
+        }
+    ]
+}

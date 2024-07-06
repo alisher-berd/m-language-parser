@@ -1,0 +1,66 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "[[columnName], [columnName]]",
+            "output": {
+                "type": "implicit-target-projection",
+                "id": "implicit-target-projection-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "requiredSelectorList": ["columnName", "columnName"],
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "[[let], [let]]?",
+            "output": {
+                "type": "implicit-target-projection",
+                "id": "implicit-target-projection-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "requiredSelectorList": ["let", "let"],
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[[column name], [column name]]?",
+            "output": {
+                "type": "implicit-target-projection",
+                "id": "implicit-target-projection-0",
+                "startIndex": 0,
+                "stopIndex": 12,
+                "requiredSelectorList": ["column name", "column name"],
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[[tableName.columnName], [tableName.columnName]]?",
+            "output": {
+                "type": "implicit-target-projection",
+                "id": "implicit-target-projection-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "requiredSelectorList": [
+                    "tableName.columnName",
+                    "tableName.columnName"
+                ],
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[[#\"Column name\"], [#\"Column name\"]]",
+            "output": {
+                "type": "implicit-target-projection",
+                "id": "implicit-target-projection-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "requiredSelectorList": [
+                    "#\"Column name\"",
+                    "#\"Column name\""
+                ],
+                "isOptionalSelection": false
+            }
+        }
+    ]
+}

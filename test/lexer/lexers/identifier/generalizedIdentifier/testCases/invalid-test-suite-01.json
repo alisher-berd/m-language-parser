@@ -1,0 +1,44 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "identifier.two.dots"
+        },
+        {
+            "input": "some.identifier.separated.by.dots"
+        },
+        {
+            "input": "#binary"
+        },
+        {
+            "input": "#datetimezone"
+        },
+        {
+            "input": "#datetime"
+        },
+        {
+            "input": "#date"
+        },
+        {
+            "input": "#duration"
+        },
+        {
+            "input": "#infinity"
+        },
+        {
+            "input": "#nan"
+        },
+        {
+            "input": "#sections"
+        },
+        {
+            "input": "#shared"
+        },
+        {
+            "input": "#table"
+        },
+        {
+            "input": "#time"
+        }
+    ]
+}

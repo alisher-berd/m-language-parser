@@ -1,0 +1,277 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "#\"1998 Sales\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"1998 Sales\""
+            }
+        },
+        {
+            "input": "#\"A + B\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"A + B\""
+            }
+        },
+        {
+            "input": "#\"and\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"and\""
+            }
+        },
+        {
+            "input": "#\"as\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"as\""
+            }
+        },
+        {
+            "input": "#\"each\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"each\""
+            }
+        },
+        {
+            "input": "#\"else\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"else\""
+            }
+        },
+        {
+            "input": "#\"error\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"error\""
+            }
+        },
+        {
+            "input": "#\"false\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"false\""
+            }
+        },
+        {
+            "input": "#\"if\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"if\""
+            }
+        },
+        {
+            "input": "#\"in\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"in\""
+            }
+        },
+        {
+            "input": "#\"is\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"is\""
+            }
+        },
+        {
+            "input": "#\"let\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"let\""
+            }
+        },
+        {
+            "input": "#\"meta\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"meta\""
+            }
+        },
+        {
+            "input": "#\"not\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"not\""
+            }
+        },
+        {
+            "input": "#\"null\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"null\""
+            }
+        },
+        {
+            "input": "#\"or\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"or\""
+            }
+        },
+        {
+            "input": "#\"otherwise\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"otherwise\""
+            }
+        },
+        {
+            "input": "#\"section\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"section\""
+            }
+        },
+        {
+            "input": "#\"shared\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"shared\""
+            }
+        },
+        {
+            "input": "#\"then\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"then\""
+            }
+        },
+        {
+            "input": "#\"true\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"true\""
+            }
+        },
+        {
+            "input": "#\"try\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"try\""
+            }
+        },
+        {
+            "input": "#\"type\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"type\""
+            }
+        },
+        {
+            "input": "#\"#binary\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#binary\""
+            }
+        },
+        {
+            "input": "#\"#datetimezone\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#datetimezone\""
+            }
+        },
+        {
+            "input": "#\"#datetime\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#datetime\""
+            }
+        },
+        {
+            "input": "#\"#date\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#date\""
+            }
+        },
+        {
+            "input": "#\"#duration\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#duration\""
+            }
+        },
+        {
+            "input": "#\"#infinity\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#infinity\""
+            }
+        },
+        {
+            "input": "#\"#nan\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#nan\""
+            }
+        },
+        {
+            "input": "#\"#sections\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#sections\""
+            }
+        },
+        {
+            "input": "#\"#shared\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#shared\""
+            }
+        },
+        {
+            "input": "#\"#table\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#table\""
+            }
+        },
+        {
+            "input": "#\"#time\"",
+            "output": {
+                "tokenType": "identifier",
+                "token": "quoted-identifier",
+                "value": "#\"#time\""
+            }
+        }
+    ]
+}

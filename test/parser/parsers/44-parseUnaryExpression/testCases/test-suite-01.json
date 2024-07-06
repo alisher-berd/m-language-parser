@@ -1,0 +1,443 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "not - + type [colName, optional colName, ...]",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 12,
+                "operator": "not",
+                "operand": {
+                    "type": "unary-expression",
+                    "id": "unary-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 12,
+                    "operator": "minus",
+                    "operand": {
+                        "type": "unary-expression",
+                        "id": "unary-expression-2",
+                        "startIndex": 2,
+                        "stopIndex": 12,
+                        "operator": "plus",
+                        "operand": {
+                            "type": "record-type",
+                            "id": "record-type-4",
+                            "startIndex": 4,
+                            "stopIndex": 12,
+                            "hasOpenRecordMarker": true,
+                            "fieldSpecificationList": [
+                                {
+                                    "fieldName": "colName",
+                                    "fieldType": null,
+                                    "isOptional": false
+                                },
+                                {
+                                    "fieldName": "colName",
+                                    "fieldType": null,
+                                    "isOptional": true
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "input": "- type function (col2 as binary, optional col2 as any) as nullable table",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 16,
+                "operator": "minus",
+                "operand": {
+                    "type": "function-type",
+                    "id": "function-type-2",
+                    "startIndex": 2,
+                    "stopIndex": 16,
+                    "requiredParameterSpecificationList": [
+                        {
+                            "parameterName": "col2",
+                            "parameterType": {
+                                "type": "primitive-type",
+                                "id": "primitive-type-6",
+                                "startIndex": 6,
+                                "stopIndex": 7,
+                                "primitiveType": "binary"
+                            },
+                            "isOptional": false
+                        }
+                    ],
+                    "optionalParameterSpecificationList": [
+                        {
+                            "parameterName": "col2",
+                            "parameterType": {
+                                "type": "primitive-type",
+                                "id": "primitive-type-11",
+                                "startIndex": 11,
+                                "stopIndex": 12,
+                                "primitiveType": "any"
+                            },
+                            "isOptional": true
+                        }
+                    ],
+                    "parameterSpecificationList": [
+                        {
+                            "parameterName": "col2",
+                            "parameterType": {
+                                "type": "primitive-type",
+                                "id": "primitive-type-6",
+                                "startIndex": 6,
+                                "stopIndex": 7,
+                                "primitiveType": "binary"
+                            },
+                            "isOptional": false
+                        },
+                        {
+                            "parameterName": "col2",
+                            "parameterType": {
+                                "type": "primitive-type",
+                                "id": "primitive-type-11",
+                                "startIndex": 11,
+                                "stopIndex": 12,
+                                "primitiveType": "any"
+                            },
+                            "isOptional": true
+                        }
+                    ],
+                    "returnType": {
+                        "nullableFlag": true,
+                        "primitiveType": "table"
+                    }
+                }
+            }
+        },
+        {
+            "input": "not 23",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "operator": "not",
+                "operand": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "23",
+                    "literalType": "number-literal"
+                }
+            }
+        },
+        {
+            "input": "+ {2, 2..5, 6}",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "operator": "plus",
+                "operand": {
+                    "type": "list-expression",
+                    "id": "list-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 10,
+                    "itemList": [
+                        {
+                            "type": "item",
+                            "id": "item-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "expression": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-2",
+                                "startIndex": 2,
+                                "stopIndex": 3,
+                                "literalValue": "2",
+                                "literalType": "number-literal"
+                            },
+                            "isSequenceItem": false,
+                            "secondExpression": null
+                        },
+                        {
+                            "type": "item",
+                            "id": "item-4",
+                            "startIndex": 4,
+                            "stopIndex": 7,
+                            "expression": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-4",
+                                "startIndex": 4,
+                                "stopIndex": 5,
+                                "literalValue": "2",
+                                "literalType": "number-literal"
+                            },
+                            "isSequenceItem": true,
+                            "secondExpression": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-6",
+                                "startIndex": 6,
+                                "stopIndex": 7,
+                                "literalValue": "5",
+                                "literalType": "number-literal"
+                            }
+                        },
+                        {
+                            "type": "item",
+                            "id": "item-8",
+                            "startIndex": 8,
+                            "stopIndex": 9,
+                            "expression": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-8",
+                                "startIndex": 8,
+                                "stopIndex": 9,
+                                "literalValue": "6",
+                                "literalType": "number-literal"
+                            },
+                            "isSequenceItem": false,
+                            "secondExpression": null
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "input": "- [columnName = 2, anotherCol = 4]",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "operator": "minus",
+                "operand": {
+                    "type": "record-expression",
+                    "id": "record-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 10,
+                    "fieldList": [
+                        {
+                            "fieldName": "columnName",
+                            "expression": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-4",
+                                "startIndex": 4,
+                                "stopIndex": 5,
+                                "literalValue": "2",
+                                "literalType": "number-literal"
+                            }
+                        },
+                        {
+                            "fieldName": "anotherCol",
+                            "expression": {
+                                "type": "literal-expression",
+                                "id": "literal-expression-8",
+                                "startIndex": 8,
+                                "stopIndex": 9,
+                                "literalValue": "4",
+                                "literalType": "number-literal"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "input": "not @columnName",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "operator": "not",
+                "operand": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 3,
+                    "identifierName": "columnName",
+                    "isInclusive": true
+                }
+            }
+        },
+        {
+            "input": "not + (columnName)",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "operator": "not",
+                "operand": {
+                    "type": "unary-expression",
+                    "id": "unary-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 5,
+                    "operator": "plus",
+                    "operand": {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-3",
+                        "startIndex": 2,
+                        "stopIndex": 5,
+                        "identifierName": "columnName",
+                        "isInclusive": false
+                    }
+                }
+            }
+        },
+        {
+            "input": "- [[tableName.columnName], [tableName.columnName]]?",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 11,
+                "operator": "minus",
+                "operand": {
+                    "type": "field-access-expression",
+                    "id": "field-access-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 11,
+                    "selectedPrimaryExpression": null,
+                    "implicitTargetFieldSelection": null,
+                    "implicitTargetProjection": [
+                        "tableName.columnName",
+                        "tableName.columnName"
+                    ],
+                    "isOptionalSelection": true
+                }
+            }
+        },
+        {
+            "input": "not tableName [[tableName.columnName], [tableName.columnName]]?",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 12,
+                "operator": "not",
+                "operand": {
+                    "type": "field-access-expression",
+                    "id": "field-access-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 12,
+                    "selectedPrimaryExpression": {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-1",
+                        "startIndex": 1,
+                        "stopIndex": 2,
+                        "identifierName": "tableName",
+                        "isInclusive": false
+                    },
+                    "implicitTargetFieldSelection": null,
+                    "implicitTargetProjection": [
+                        "tableName.columnName",
+                        "tableName.columnName"
+                    ],
+                    "isOptionalSelection": true
+                }
+            }
+        },
+        {
+            "input": "+ tableName {2+2}?",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 8,
+                "operator": "plus",
+                "operand": {
+                    "type": "item-access-expression",
+                    "id": "item-access-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 8,
+                    "selectedPrimaryExpression": {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-1",
+                        "startIndex": 1,
+                        "stopIndex": 2,
+                        "identifierName": "tableName",
+                        "isInclusive": false
+                    },
+                    "itemSelector": {
+                        "type": "additive-expression",
+                        "id": "additive-expression-3",
+                        "startIndex": 3,
+                        "stopIndex": 6,
+                        "leftOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        },
+                        "operator": "plus",
+                        "rightOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-5",
+                            "startIndex": 5,
+                            "stopIndex": 6,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        }
+                    },
+                    "isOptionalSelection": true
+                }
+            }
+        },
+        {
+            "input": "- someFunction (2, a, 4)",
+            "output": {
+                "type": "unary-expression",
+                "id": "unary-expression-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "operator": "minus",
+                "operand": {
+                    "type": "invoke-expression",
+                    "id": "invoke-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 9,
+                    "invokedPrimaryExpression": {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-1",
+                        "startIndex": 1,
+                        "stopIndex": 2,
+                        "identifierName": "someFunction",
+                        "isInclusive": false
+                    },
+                    "argumentList": [
+                        {
+                            "type": "literal-expression",
+                            "id": "literal-expression-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        },
+                        {
+                            "type": "identifier-expression",
+                            "id": "identifier-expression-5",
+                            "startIndex": 5,
+                            "stopIndex": 6,
+                            "identifierName": "a",
+                            "isInclusive": false
+                        },
+                        {
+                            "type": "literal-expression",
+                            "id": "literal-expression-7",
+                            "startIndex": 7,
+                            "stopIndex": 8,
+                            "literalValue": "4",
+                            "literalType": "number-literal"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "{any}",
+            "output": {
+                "type": "list-type",
+                "id": "list-type-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "itemType": {
+                    "type": "primitive-type",
+                    "id": "primitive-type-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "primitiveType": "any"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,293 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "and"
+        },
+        {
+            "input": "as"
+        },
+        {
+            "input": "each"
+        },
+        {
+            "input": "else"
+        },
+        {
+            "input": "error"
+        },
+        {
+            "input": "false"
+        },
+        {
+            "input": "if"
+        },
+        {
+            "input": "in"
+        },
+        {
+            "input": "is"
+        },
+        {
+            "input": "let"
+        },
+        {
+            "input": "meta"
+        },
+        {
+            "input": "not"
+        },
+        {
+            "input": "null"
+        },
+        {
+            "input": "or"
+        },
+        {
+            "input": "otherwise"
+        },
+        {
+            "input": "section"
+        },
+        {
+            "input": "shared"
+        },
+        {
+            "input": "then"
+        },
+        {
+            "input": "true"
+        },
+        {
+            "input": "try"
+        },
+        {
+            "input": "type"
+        },
+        {
+            "input": "#binary"
+        },
+        {
+            "input": "#datetimezone"
+        },
+        {
+            "input": "#datetime"
+        },
+        {
+            "input": "#date"
+        },
+        {
+            "input": "#duration"
+        },
+        {
+            "input": "#infinity"
+        },
+        {
+            "input": "#nan"
+        },
+        {
+            "input": "#sections"
+        },
+        {
+            "input": "#shared"
+        },
+        {
+            "input": "#table"
+        },
+        {
+            "input": "#time"
+        },
+        {
+            "input": "identifer.and"
+        },
+        {
+            "input": "identifer.as"
+        },
+        {
+            "input": "identifer.each"
+        },
+        {
+            "input": "identifer.else"
+        },
+        {
+            "input": "identifer.error"
+        },
+        {
+            "input": "identifer.false"
+        },
+        {
+            "input": "identifer.if"
+        },
+        {
+            "input": "identifer.in"
+        },
+        {
+            "input": "identifer.is"
+        },
+        {
+            "input": "identifer.let"
+        },
+        {
+            "input": "identifer.meta"
+        },
+        {
+            "input": "identifer.not"
+        },
+        {
+            "input": "identifer.null"
+        },
+        {
+            "input": "identifer.or"
+        },
+        {
+            "input": "identifer.otherwise"
+        },
+        {
+            "input": "identifer.section"
+        },
+        {
+            "input": "identifer.shared"
+        },
+        {
+            "input": "identifer.then"
+        },
+        {
+            "input": "identifer.true"
+        },
+        {
+            "input": "identifer.try"
+        },
+        {
+            "input": "identifer.type"
+        },
+        {
+            "input": "identifer.#binary"
+        },
+        {
+            "input": "identifer.#datetimezone"
+        },
+        {
+            "input": "identifer.#datetime"
+        },
+        {
+            "input": "identifer.#date"
+        },
+        {
+            "input": "identifer.#duration"
+        },
+        {
+            "input": "identifer.#infinity"
+        },
+        {
+            "input": "identifer.#nan"
+        },
+        {
+            "input": "identifer.#sections"
+        },
+        {
+            "input": "identifer.#shared"
+        },
+        {
+            "input": "identifer.#table"
+        },
+        {
+            "input": "identifer.#time"
+        },
+        {
+            "input": "identifer.and.identifier"
+        },
+        {
+            "input": "identifer.as.identifier"
+        },
+        {
+            "input": "identifer.each.identifier"
+        },
+        {
+            "input": "identifer.else.identifier"
+        },
+        {
+            "input": "identifer.error.identifier"
+        },
+        {
+            "input": "identifer.false.identifier"
+        },
+        {
+            "input": "identifer.if.identifier"
+        },
+        {
+            "input": "identifer.in.identifier"
+        },
+        {
+            "input": "identifer.is.identifier"
+        },
+        {
+            "input": "identifer.let.identifier"
+        },
+        {
+            "input": "identifer.meta.identifier"
+        },
+        {
+            "input": "identifer.not.identifier"
+        },
+        {
+            "input": "identifer.null.identifier"
+        },
+        {
+            "input": "identifer.or.identifier"
+        },
+        {
+            "input": "identifer.otherwise.identifier"
+        },
+        {
+            "input": "identifer.section.identifier"
+        },
+        {
+            "input": "identifer.shared.identifier"
+        },
+        {
+            "input": "identifer.then.identifier"
+        },
+        {
+            "input": "identifer.true.identifier"
+        },
+        {
+            "input": "identifer.try.identifier"
+        },
+        {
+            "input": "identifer.type.identifier"
+        },
+        {
+            "input": "identifer.#binary.identifier"
+        },
+        {
+            "input": "identifer.#datetimezone.identifier"
+        },
+        {
+            "input": "identifer.#datetime.identifier"
+        },
+        {
+            "input": "identifer.#date.identifier"
+        },
+        {
+            "input": "identifer.#duration.identifier"
+        },
+        {
+            "input": "identifer.#infinity.identifier"
+        },
+        {
+            "input": "identifer.#nan.identifier"
+        },
+        {
+            "input": "identifer.#sections.identifier"
+        },
+        {
+            "input": "identifer.#shared.identifier"
+        },
+        {
+            "input": "identifer.#table.identifier"
+        },
+        {
+            "input": "identifer.#time.identifier"
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "a",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "a"
+            }
+        },
+        {
+            "input": "someIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "someIdentifier"
+            }
+        },
+        {
+            "input": "some_Identifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "some_Identifier"
+            }
+        },
+        {
+            "input": "some Identifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "some"
+            }
+        },
+        {
+            "input": "identifier1.identifier2.identifer3",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "identifier1.identifier2.identifer3"
+            }
+        },
+        {
+            "input": "_identifier1._identifier2._identifer3",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "_identifier1._identifier2._identifer3"
+            }
+        },
+        {
+            "input": "andSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "andSomeIdentifier"
+            }
+        },
+        {
+            "input": "asSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "asSomeIdentifier"
+            }
+        },
+        {
+            "input": "eachSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "eachSomeIdentifier"
+            }
+        },
+        {
+            "input": "elseSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "elseSomeIdentifier"
+            }
+        },
+        {
+            "input": "errorSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "errorSomeIdentifier"
+            }
+        },
+        {
+            "input": "falseSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "falseSomeIdentifier"
+            }
+        },
+        {
+            "input": "ifSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "ifSomeIdentifier"
+            }
+        },
+        {
+            "input": "inSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "inSomeIdentifier"
+            }
+        },
+        {
+            "input": "isSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "isSomeIdentifier"
+            }
+        },
+        {
+            "input": "letSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "letSomeIdentifier"
+            }
+        },
+        {
+            "input": "metaSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "metaSomeIdentifier"
+            }
+        },
+        {
+            "input": "notSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "notSomeIdentifier"
+            }
+        },
+        {
+            "input": "nullSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "nullSomeIdentifier"
+            }
+        },
+        {
+            "input": "orSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "orSomeIdentifier"
+            }
+        },
+        {
+            "input": "otherwiseSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "otherwiseSomeIdentifier"
+            }
+        },
+        {
+            "input": "sectionSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "sectionSomeIdentifier"
+            }
+        },
+        {
+            "input": "sharedSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "sharedSomeIdentifier"
+            }
+        },
+        {
+            "input": "thenSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "thenSomeIdentifier"
+            }
+        },
+        {
+            "input": "trueSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "trueSomeIdentifier"
+            }
+        },
+        {
+            "input": "trySomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "trySomeIdentifier"
+            }
+        },
+        {
+            "input": "typeSomeIdentifier",
+            "output": {
+                "tokenType": "identifier",
+                "token": "regular-identifier",
+                "value": "typeSomeIdentifier"
+            }
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "sectionName!variableName",
+            "output": {
+                "type": "section-access-expression",
+                "id": "section-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "firstIdentifierName": "sectionName",
+                "secondIdentifierName": "variableName"
+            }
+        }
+    ]
+}

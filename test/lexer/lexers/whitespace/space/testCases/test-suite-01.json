@@ -1,0 +1,194 @@
+{
+    "description": "Single space.",
+    "testCases": [
+        {
+            "input": " SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "SPACE"
+        },
+        {
+            "input": " NO-BREAK SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "NO-BREAK SPACE"
+        },
+        {
+            "input": " OGHAM SPACE MARK",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "OGHAM SPACE MARK"
+        },
+        {
+            "input": " EN QUAD",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "EN QUAD"
+        },
+        {
+            "input": " EM QUAD",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "EM QUAD"
+        },
+        {
+            "input": " EN SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "EN SPACE"
+        },
+        {
+            "input": " EM SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "EM SPACE"
+        },
+        {
+            "input": " THREE-PER-EM SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "THREE-PER-EM SPACE"
+        },
+        {
+            "input": " FOUR-PER-EM SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "FOUR-PER-EM SPACE"
+        },
+        {
+            "input": " SIX-PER-EM SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "SIX-PER-EM SPACE"
+        },
+        {
+            "input": " FIGURE SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "FIGURE SPACE"
+        },
+        {
+            "input": " PUNCTUATION SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "PUNCTUATION SPACE"
+        },
+        {
+            "input": " THIN SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "THIN SPACE"
+        },
+        {
+            "input": " HAIR SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "HAIR SPACE"
+        },
+        {
+            "input": " NARROW NO-BREAK SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "NARROW NO-BREAK SPACE"
+        },
+        {
+            "input": " MEDIUM MATHEMATICAL SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " "
+            },
+            "description": "MEDIUM MATHEMATICAL SPACE"
+        },
+        {
+            "input": "　IDEOGRAPHIC SPACE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "　"
+            },
+            "description": "IDEOGRAPHIC SPACE"
+        },
+        {
+            "input": "\tHORIZONTAL TAB",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\t"
+            },
+            "description": "HORIZONTAL TAB"
+        },
+        {
+            "input": "\u000bVERTICAL TAB",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\u000b"
+            },
+            "description": "VERTICAL TAB"
+        },
+        {
+            "input": "\fFORM FEED",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\f"
+            },
+            "description": "FORM FEED"
+        },
+        {
+            "input": "\r\nCARRIAGE RETURN, LINE FEED",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\r\n"
+            },
+            "description": "CARRIAGE RETURN, LINE FEED"
+        }
+    ]
+}

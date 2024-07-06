@@ -1,0 +1,685 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "\"some text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text\""
+            }
+        },
+        {
+            "input": "\"with \"\"quoted text\"\" \"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"with \"\"quoted text\"\" \""
+            }
+        },
+        {
+            "input": "\"with \"single quoted text\" \"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"with \""
+            }
+        },
+        {
+            "input": "\"with # hash\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"with # hash\""
+            }
+        },
+        {
+            "input": "\"with \"\"quoted text\"\" and # hash\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"with \"\"quoted text\"\" and # hash\""
+            }
+        },
+        {
+            "input": "\"some #(cr) text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some #(cr) text\""
+            }
+        },
+        {
+            "input": "\"some #(cf) text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some #(cf) text\""
+            }
+        },
+        {
+            "input": "\"some #(tab) text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some #(tab) text\""
+            }
+        },
+        {
+            "input": "\"some #(#) text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some #(#) text\""
+            }
+        },
+        {
+            "input": "\"some #(000D) text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some #(000D) text\""
+            }
+        },
+        {
+            "input": "\"some #(0000000D) text\"",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some #(0000000D) text\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(cf) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cf)#(cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(tab) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(#) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(#)#(#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(000D) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(0000000D) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(0000000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr,cr) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cf,cf) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cf,cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab,tab) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(#,#) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(#,#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D,000D) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D,0000000D) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D,0000000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr,cr) some text after\" repeated 2 times",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(#)#(tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(#)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cr)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(cf)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(cf)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(#)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(#)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cr)#(#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(tab)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(tab)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(#)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(#)#(#)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(#)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cf)#(#)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(cr)#(#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(cr)#(#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(#)#(tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(#)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(cf)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab)#(cf)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(#)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(#)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cf)#(tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cf)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(cf)#(tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab)#(cf)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cr)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(tab)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab)#(tab)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(tab)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(tab)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(#)#(cf) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(#)#(#)#(cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(cr)#(tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(cr)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(cr)#(tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cf)#(cr)#(tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(cr)#(cf) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(cr)#(cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(#)#(0000000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab)#(#)#(0000000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(#)#(cf)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(#)#(cf)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(cr)#(#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(cr)#(#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(tab)#(cr)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(tab)#(cr)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(0000000D)#(#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(0000000D)#(#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(0000000D)#(cr)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(0000000D)#(cr)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cf)#(cr)#(cf) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cf)#(cr)#(cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(cr)#(000D)#(000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(cr)#(000D)#(000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before #(000D)#(0000000D)#(cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before #(000D)#(0000000D)#(cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,#,tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(000D,#,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,cr,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,cf,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(0000000D,cf,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,#,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(0000000D,#,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,cr,#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,tab,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(0000000D,tab,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(#,#,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(#,#,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cf,#,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cf,#,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,cr,#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(000D,cr,#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,#,tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(000D,#,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,cf,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(tab,cf,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,#,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(000D,#,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cf,tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,cf,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,cf,tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(tab,cf,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,cr,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,tab,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(tab,tab,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,tab,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,tab,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(#,#,cf) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(#,#,cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,cr,tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(0000000D,cr,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cf,cr,tab) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cf,cr,tab) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,cr,cf) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(000D,cr,cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,#,0000000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(tab,#,0000000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(#,cf,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(#,cf,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,cr,#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,cr,#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(tab,cr,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(tab,cr,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,0000000D,#) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(0000000D,0000000D,#) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(0000000D,cr,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(0000000D,cr,cr) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cf,cr,cf) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cf,cr,cf) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(cr,000D,000D) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(cr,000D,000D) some text after\""
+            }
+        },
+        {
+            "input": "\"some text before  #(000D,0000000D,cr) some text after\" mixed up",
+            "output": {
+                "tokenType": "literal",
+                "token": "text-literal",
+                "value": "\"some text before  #(000D,0000000D,cr) some text after\""
+            }
+        }
+    ]
+}

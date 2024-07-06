@@ -1,0 +1,35 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "any",
+            "output": {
+                "type": "primitive-type",
+                "id": "primitive-type-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "primitiveType": "any"
+            }
+        },
+        {
+            "input": "function",
+            "output": {
+                "type": "primitive-type",
+                "id": "primitive-type-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "primitiveType": "function"
+            }
+        },
+        {
+            "input": "binary",
+            "output": {
+                "type": "primitive-type",
+                "id": "primitive-type-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "primitiveType": "binary"
+            }
+        }
+    ]
+}

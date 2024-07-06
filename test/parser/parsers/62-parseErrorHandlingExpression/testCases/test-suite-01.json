@@ -1,0 +1,62 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "try 1 otherwise 2",
+            "output": {
+                "type": "error-handling-expression",
+                "id": "error-handling-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "protectedExpression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "1",
+                    "literalType": "number-literal"
+                },
+                "otherwiseClause": {
+                    "defaultExpression": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-3",
+                        "startIndex": 3,
+                        "stopIndex": 4,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    }
+                },
+                "catchClause": null
+            }
+        },
+        {
+            "input": "try 1 catch (col) => 2",
+            "output": {
+                "type": "error-handling-expression",
+                "id": "error-handling-expression-0",
+                "startIndex": 0,
+                "stopIndex": 8,
+                "protectedExpression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "1",
+                    "literalType": "number-literal"
+                },
+                "otherwiseClause": null,
+                "catchClause": {
+                    "parameterName": "col",
+                    "functionBody": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-7",
+                        "startIndex": 7,
+                        "stopIndex": 8,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    }
+                }
+            }
+        }
+    ]
+}

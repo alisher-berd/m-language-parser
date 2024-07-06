@@ -1,0 +1,2050 @@
+[
+    {
+        "tokenType": "keyword",
+        "token": "let",
+        "value": "let",
+        "start": 0,
+        "end": 3,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Source",
+        "start": 8,
+        "end": 14,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 15,
+        "end": 16,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Exchange.Contents",
+        "start": 17,
+        "end": 34,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 34,
+        "end": 35,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"xyz@contoso.com\"",
+        "start": 35,
+        "end": 52,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 52,
+        "end": 53,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 53,
+        "end": 54,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Mail1",
+        "start": 59,
+        "end": 64,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 65,
+        "end": 66,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Source",
+        "start": 67,
+        "end": 73,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 73,
+        "end": 74,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 74,
+        "end": 75,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Name",
+        "start": 75,
+        "end": 79,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 79,
+        "end": 80,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Mail\"",
+        "start": 80,
+        "end": 86,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 86,
+        "end": 87,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 87,
+        "end": 88,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 88,
+        "end": 89,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Data",
+        "start": 89,
+        "end": 93,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 93,
+        "end": 94,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 94,
+        "end": 95,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Expanded Sender\"",
+        "start": 100,
+        "end": 118,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 119,
+        "end": 120,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.ExpandRecordColumn",
+        "start": 121,
+        "end": 145,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 145,
+        "end": 146,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Mail1",
+        "start": 146,
+        "end": 151,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 151,
+        "end": 152,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Sender\"",
+        "start": 153,
+        "end": 161,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 161,
+        "end": 162,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 163,
+        "end": 164,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Name\"",
+        "start": 164,
+        "end": 170,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 170,
+        "end": 171,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 171,
+        "end": 172,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 173,
+        "end": 174,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Name\"",
+        "start": 174,
+        "end": 180,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 180,
+        "end": 181,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 181,
+        "end": 182,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 182,
+        "end": 183,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Filtered Rows\"",
+        "start": 188,
+        "end": 204,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 205,
+        "end": 206,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.SelectRows",
+        "start": 207,
+        "end": 223,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 223,
+        "end": 224,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Expanded Sender\"",
+        "start": 224,
+        "end": 242,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 242,
+        "end": 243,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "each",
+        "value": "each",
+        "start": 244,
+        "end": 248,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 249,
+        "end": 250,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 250,
+        "end": 251,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "HasAttachments",
+        "start": 251,
+        "end": 265,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 265,
+        "end": 266,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 267,
+        "end": 268,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "logical-literal",
+        "value": "true",
+        "start": 269,
+        "end": 273,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 273,
+        "end": 274,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 274,
+        "end": 275,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 275,
+        "end": 276,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Filtered Rows1\"",
+        "start": 281,
+        "end": 298,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 299,
+        "end": 300,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.SelectRows",
+        "start": 301,
+        "end": 317,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 317,
+        "end": 318,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Filtered Rows\"",
+        "start": 318,
+        "end": 334,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 334,
+        "end": 335,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "each",
+        "value": "each",
+        "start": 336,
+        "end": 340,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 341,
+        "end": 342,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 342,
+        "end": 343,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Subject",
+        "start": 343,
+        "end": 350,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 350,
+        "end": 351,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 352,
+        "end": 353,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"sample files for email PQ test\"",
+        "start": 354,
+        "end": 386,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 386,
+        "end": 387,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "and",
+        "value": "and",
+        "start": 388,
+        "end": 391,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 392,
+        "end": 393,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 393,
+        "end": 394,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Folder",
+        "start": 394,
+        "end": 400,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Path",
+        "start": 401,
+        "end": 405,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 405,
+        "end": 406,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 407,
+        "end": 408,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"\\Inbox\\\"",
+        "start": 409,
+        "end": 418,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 418,
+        "end": 419,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 419,
+        "end": 420,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 420,
+        "end": 421,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Removed Other Columns\"",
+        "start": 426,
+        "end": 450,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 451,
+        "end": 452,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.SelectColumns",
+        "start": 453,
+        "end": 472,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 472,
+        "end": 473,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Filtered Rows1\"",
+        "start": 473,
+        "end": 490,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 490,
+        "end": 491,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 491,
+        "end": 492,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Attachments\"",
+        "start": 492,
+        "end": 505,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 505,
+        "end": 506,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 506,
+        "end": 507,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 507,
+        "end": 508,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Expanded Attachments\"",
+        "start": 513,
+        "end": 536,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 537,
+        "end": 538,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.ExpandTableColumn",
+        "start": 539,
+        "end": 562,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 562,
+        "end": 563,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Removed Other Columns\"",
+        "start": 563,
+        "end": 587,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 587,
+        "end": 588,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Attachments\"",
+        "start": 589,
+        "end": 602,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 602,
+        "end": 603,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 604,
+        "end": 605,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Name\"",
+        "start": 605,
+        "end": 611,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 611,
+        "end": 612,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"AttachmentContent\"",
+        "start": 613,
+        "end": 632,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 632,
+        "end": 633,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 633,
+        "end": 634,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 635,
+        "end": 636,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Name\"",
+        "start": 636,
+        "end": 642,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 642,
+        "end": 643,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"AttachmentContent\"",
+        "start": 644,
+        "end": 663,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 663,
+        "end": 664,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 664,
+        "end": 665,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 665,
+        "end": 666,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Filtered Hidden Files1\"",
+        "start": 671,
+        "end": 696,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 697,
+        "end": 698,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.SelectRows",
+        "start": 699,
+        "end": 715,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 715,
+        "end": 716,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Expanded Attachments\"",
+        "start": 716,
+        "end": 739,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 739,
+        "end": 740,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "each",
+        "value": "each",
+        "start": 741,
+        "end": 745,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 746,
+        "end": 747,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Attributes",
+        "start": 747,
+        "end": 757,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 757,
+        "end": 758,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "question-mark",
+        "value": "?",
+        "start": 758,
+        "end": 759,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 759,
+        "end": 760,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Hidden",
+        "start": 760,
+        "end": 766,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 766,
+        "end": 767,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "question-mark",
+        "value": "?",
+        "start": 767,
+        "end": 768,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "not-equal",
+        "value": "<>",
+        "start": 769,
+        "end": 771,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "logical-literal",
+        "value": "true",
+        "start": 772,
+        "end": 776,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 776,
+        "end": 777,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 777,
+        "end": 778,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Invoke Custom Function1\"",
+        "start": 783,
+        "end": 809,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 810,
+        "end": 811,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.AddColumn",
+        "start": 812,
+        "end": 827,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 827,
+        "end": 828,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Filtered Hidden Files1\"",
+        "start": 828,
+        "end": 853,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 853,
+        "end": 854,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Transform File from Mail\"",
+        "start": 855,
+        "end": 881,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 881,
+        "end": 882,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "each",
+        "value": "each",
+        "start": 883,
+        "end": 887,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Transform File from Mail\"",
+        "start": 888,
+        "end": 915,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 915,
+        "end": 916,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-bracket",
+        "value": "[",
+        "start": 916,
+        "end": 917,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "AttachmentContent",
+        "start": 917,
+        "end": 934,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-bracket",
+        "value": "]",
+        "start": 934,
+        "end": 935,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 935,
+        "end": 936,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 936,
+        "end": 937,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 937,
+        "end": 938,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Removed Other Columns1\"",
+        "start": 943,
+        "end": 968,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 969,
+        "end": 970,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.SelectColumns",
+        "start": 971,
+        "end": 990,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 990,
+        "end": 991,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Invoke Custom Function1\"",
+        "start": 991,
+        "end": 1017,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1017,
+        "end": 1018,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1019,
+        "end": 1020,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Transform File from Mail\"",
+        "start": 1020,
+        "end": 1046,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1046,
+        "end": 1047,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 1047,
+        "end": 1048,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1048,
+        "end": 1049,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Expanded Table Column1\"",
+        "start": 1054,
+        "end": 1079,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 1080,
+        "end": 1081,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.ExpandTableColumn",
+        "start": 1082,
+        "end": 1105,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 1105,
+        "end": 1106,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Removed Other Columns1\"",
+        "start": 1106,
+        "end": 1131,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1131,
+        "end": 1132,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Transform File from Mail\"",
+        "start": 1133,
+        "end": 1159,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1159,
+        "end": 1160,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.ColumnNames",
+        "start": 1161,
+        "end": 1178,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 1178,
+        "end": 1179,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Transform File from Mail\"",
+        "start": 1179,
+        "end": 1206,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 1206,
+        "end": 1207,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Sample File\"",
+        "start": 1207,
+        "end": 1221,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 1221,
+        "end": 1222,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 1222,
+        "end": 1223,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 1223,
+        "end": 1224,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1224,
+        "end": 1225,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Changed Type\"",
+        "start": 1230,
+        "end": 1245,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "equal",
+        "value": "=",
+        "start": 1246,
+        "end": 1247,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "Table.TransformColumnTypes",
+        "start": 1248,
+        "end": 1274,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-parenthesis",
+        "value": "(",
+        "start": 1274,
+        "end": 1275,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Expanded Table Column1\"",
+        "start": 1275,
+        "end": 1300,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1300,
+        "end": 1301,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1301,
+        "end": 1302,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1302,
+        "end": 1303,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column1\"",
+        "start": 1303,
+        "end": 1312,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1312,
+        "end": 1313,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1314,
+        "end": 1318,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1319,
+        "end": 1323,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1323,
+        "end": 1324,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1324,
+        "end": 1325,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1326,
+        "end": 1327,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column2\"",
+        "start": 1327,
+        "end": 1336,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1336,
+        "end": 1337,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1338,
+        "end": 1342,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1343,
+        "end": 1347,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1347,
+        "end": 1348,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1348,
+        "end": 1349,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1350,
+        "end": 1351,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column3\"",
+        "start": 1351,
+        "end": 1360,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1360,
+        "end": 1361,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1362,
+        "end": 1366,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1367,
+        "end": 1371,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1371,
+        "end": 1372,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1372,
+        "end": 1373,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1374,
+        "end": 1375,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column4\"",
+        "start": 1375,
+        "end": 1384,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1384,
+        "end": 1385,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1386,
+        "end": 1390,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1391,
+        "end": 1395,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1395,
+        "end": 1396,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1396,
+        "end": 1397,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1398,
+        "end": 1399,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column5\"",
+        "start": 1399,
+        "end": 1408,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1408,
+        "end": 1409,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1410,
+        "end": 1414,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1415,
+        "end": 1419,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1419,
+        "end": 1420,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1420,
+        "end": 1421,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1422,
+        "end": 1423,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column6\"",
+        "start": 1423,
+        "end": 1432,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1432,
+        "end": 1433,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1434,
+        "end": 1438,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1439,
+        "end": 1443,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1443,
+        "end": 1444,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1444,
+        "end": 1445,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1446,
+        "end": 1447,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column7\"",
+        "start": 1447,
+        "end": 1456,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1456,
+        "end": 1457,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1458,
+        "end": 1462,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1463,
+        "end": 1467,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1467,
+        "end": 1468,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1468,
+        "end": 1469,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1470,
+        "end": 1471,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column8\"",
+        "start": 1471,
+        "end": 1480,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1480,
+        "end": 1481,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1482,
+        "end": 1486,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1487,
+        "end": 1491,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1491,
+        "end": 1492,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1492,
+        "end": 1493,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1494,
+        "end": 1495,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column9\"",
+        "start": 1495,
+        "end": 1504,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1504,
+        "end": 1505,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1506,
+        "end": 1510,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1511,
+        "end": 1515,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1515,
+        "end": 1516,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1516,
+        "end": 1517,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "opening-brace",
+        "value": "{",
+        "start": 1518,
+        "end": 1519,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "literal",
+        "token": "text-literal",
+        "value": "\"Column10\"",
+        "start": 1519,
+        "end": 1529,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "comma",
+        "value": ",",
+        "start": 1529,
+        "end": 1530,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "keyword",
+        "token": "type",
+        "value": "type",
+        "start": 1531,
+        "end": 1535,
+        "blanksToNext": true
+    },
+    {
+        "tokenType": "identifier",
+        "token": "regular-identifier",
+        "value": "text",
+        "start": 1536,
+        "end": 1540,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1540,
+        "end": 1541,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-brace",
+        "value": "}",
+        "start": 1541,
+        "end": 1542,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "operator-or-punctuator",
+        "token": "closing-parenthesis",
+        "value": ")",
+        "start": 1542,
+        "end": 1543,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "keyword",
+        "token": "in",
+        "value": "in",
+        "start": 1544,
+        "end": 1546,
+        "blanksToNext": false
+    },
+    {
+        "tokenType": "identifier",
+        "token": "quoted-identifier",
+        "value": "#\"Changed Type\"",
+        "start": 1551,
+        "end": 1566,
+        "blanksToNext": false
+    }
+]

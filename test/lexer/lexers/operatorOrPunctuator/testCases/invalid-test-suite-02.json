@@ -1,0 +1,83 @@
+{
+    "description": "Space followed by an operator-or-punctuator.",
+    "testCases": [
+        {
+            "input": " ,"
+        },
+        {
+            "input": " ;"
+        },
+        {
+            "input": " =>"
+        },
+        {
+            "input": " ="
+        },
+        {
+            "input": " <>"
+        },
+        {
+            "input": " <="
+        },
+        {
+            "input": " >="
+        },
+        {
+            "input": " <"
+        },
+        {
+            "input": " >"
+        },
+        {
+            "input": " +"
+        },
+        {
+            "input": " -"
+        },
+        {
+            "input": " *"
+        },
+        {
+            "input": " /"
+        },
+        {
+            "input": " &"
+        },
+        {
+            "input": " ("
+        },
+        {
+            "input": " )"
+        },
+        {
+            "input": " ["
+        },
+        {
+            "input": " ]"
+        },
+        {
+            "input": " {"
+        },
+        {
+            "input": " }"
+        },
+        {
+            "input": " @"
+        },
+        {
+            "input": " !"
+        },
+        {
+            "input": " ??"
+        },
+        {
+            "input": " ?"
+        },
+        {
+            "input": " ..."
+        },
+        {
+            "input": " .."
+        }
+    ]
+}

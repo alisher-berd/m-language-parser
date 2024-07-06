@@ -1,0 +1,65 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "columnName",
+            "output": {
+                "type": "field-name",
+                "id": "field-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "fieldName": "columnName"
+            }
+        },
+        {
+            "input": "let",
+            "output": {
+                "type": "field-name",
+                "id": "field-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "fieldName": "let"
+            }
+        },
+        {
+            "input": "column name",
+            "output": {
+                "type": "field-name",
+                "id": "field-name-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "fieldName": "column name"
+            }
+        },
+        {
+            "input": "tableName.columnName",
+            "output": {
+                "type": "field-name",
+                "id": "field-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "fieldName": "tableName.columnName"
+            }
+        },
+        {
+            "input": "#\"Column name\"",
+            "output": {
+                "type": "field-name",
+                "id": "field-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "fieldName": "#\"Column name\""
+            }
+        },
+        {
+            "input": "Column.name???",
+            "output": {
+                "type": "field-name",
+                "id": "field-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "fieldName": "Column.name"
+            }
+        }
+    ]
+}

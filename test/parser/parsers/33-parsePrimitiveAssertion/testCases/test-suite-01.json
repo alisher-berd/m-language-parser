@@ -1,0 +1,27 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "as nullable any",
+            "output": {
+                "type": "primitive-assertion",
+                "id": "primitive-assertion-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "nullableFlag": true,
+                "primitiveType": "any"
+            }
+        },
+        {
+            "input": "as any",
+            "output": {
+                "type": "primitive-assertion",
+                "id": "primitive-assertion-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "nullableFlag": false,
+                "primitiveType": "any"
+            }
+        }
+    ]
+}

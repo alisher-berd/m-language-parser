@@ -1,0 +1,98 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "2, 2..5, 6",
+            "output": {
+                "type": "item-list",
+                "id": "item-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "itemList": [
+                    {
+                        "type": "item",
+                        "id": "item-0",
+                        "startIndex": 0,
+                        "stopIndex": 1,
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-0",
+                            "startIndex": 0,
+                            "stopIndex": 1,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        },
+                        "isSequenceItem": false,
+                        "secondExpression": null
+                    },
+                    {
+                        "type": "item",
+                        "id": "item-2",
+                        "startIndex": 2,
+                        "stopIndex": 5,
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        },
+                        "isSequenceItem": true,
+                        "secondExpression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-4",
+                            "startIndex": 4,
+                            "stopIndex": 5,
+                            "literalValue": "5",
+                            "literalType": "number-literal"
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "id": "item-6",
+                        "startIndex": 6,
+                        "stopIndex": 7,
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "literalValue": "6",
+                            "literalType": "number-literal"
+                        },
+                        "isSequenceItem": false,
+                        "secondExpression": null
+                    }
+                ]
+            }
+        },
+        {
+            "input": "2",
+            "output": {
+                "type": "item-list",
+                "id": "item-list-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "itemList": [
+                    {
+                        "type": "item",
+                        "id": "item-0",
+                        "startIndex": 0,
+                        "stopIndex": 1,
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-0",
+                            "startIndex": 0,
+                            "stopIndex": 1,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        },
+                        "isSequenceItem": false,
+                        "secondExpression": null
+                    }
+                ]
+            }
+        }
+    ]
+}

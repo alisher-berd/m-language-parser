@@ -1,0 +1,244 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "optional col4 as nullable binary, optional col5 as any, optional col6",
+            "output": {
+                "type": "parameter-list",
+                "id": "parameter-list-0",
+                "startIndex": 0,
+                "stopIndex": 13,
+                "fixedParameterList": [],
+                "optionalParameterList": [
+                    {
+                        "parameterName": "col4",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col5",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col6",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": true
+                    }
+                ],
+                "parameterList": [
+                    {
+                        "parameterName": "col4",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col5",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col6",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": true
+                    }
+                ]
+            }
+        },
+        {
+            "input": "col1 as nullable binary, col2 as any, col3",
+            "output": {
+                "type": "parameter-list",
+                "id": "parameter-list-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "fixedParameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col3",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": false
+                    }
+                ],
+                "optionalParameterList": [],
+                "parameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col3",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": false
+                    }
+                ]
+            }
+        },
+        {
+            "input": "col1 as nullable binary, col2 as any, col3, optional col4 as nullable binary, optional col5 as any, optional col6",
+            "output": {
+                "type": "parameter-list",
+                "id": "parameter-list-0",
+                "startIndex": 0,
+                "stopIndex": 24,
+                "fixedParameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col3",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": false
+                    }
+                ],
+                "optionalParameterList": [
+                    {
+                        "parameterName": "col4",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col5",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col6",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": true
+                    }
+                ],
+                "parameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col3",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col4",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col5",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col6",
+                        "nullableFlag": null,
+                        "primitiveType": null,
+                        "isOptional": true
+                    }
+                ]
+            }
+        },
+        {
+            "input": "col1 as nullable binary",
+            "output": {
+                "type": "parameter-list",
+                "id": "parameter-list-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fixedParameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    }
+                ],
+                "optionalParameterList": [],
+                "parameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    }
+                ]
+            }
+        },
+        {
+            "input": "optional col4 as nullable binary",
+            "output": {
+                "type": "parameter-list",
+                "id": "parameter-list-0",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "fixedParameterList": [],
+                "optionalParameterList": [
+                    {
+                        "parameterName": "col4",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    }
+                ],
+                "parameterList": [
+                    {
+                        "parameterName": "col4",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "2",
+            "output": {
+                "type": "item",
+                "id": "item-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-0",
+                    "startIndex": 0,
+                    "stopIndex": 1,
+                    "literalValue": "2",
+                    "literalType": "number-literal"
+                },
+                "isSequenceItem": false,
+                "secondExpression": null
+            }
+        },
+        {
+            "input": "2..5",
+            "output": {
+                "type": "item",
+                "id": "item-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-0",
+                    "startIndex": 0,
+                    "stopIndex": 1,
+                    "literalValue": "2",
+                    "literalType": "number-literal"
+                },
+                "isSequenceItem": true,
+                "secondExpression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 3,
+                    "literalValue": "5",
+                    "literalType": "number-literal"
+                }
+            }
+        },
+        {
+            "input": "\"b\"..\"d\"",
+            "output": {
+                "type": "item",
+                "id": "item-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-0",
+                    "startIndex": 0,
+                    "stopIndex": 1,
+                    "literalValue": "\"b\"",
+                    "literalType": "text-literal"
+                },
+                "isSequenceItem": true,
+                "secondExpression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-2",
+                    "startIndex": 2,
+                    "stopIndex": 3,
+                    "literalValue": "\"d\"",
+                    "literalType": "text-literal"
+                }
+            }
+        }
+    ]
+}

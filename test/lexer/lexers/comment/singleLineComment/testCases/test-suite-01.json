@@ -1,0 +1,248 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "// some comment",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment"
+            }
+        },
+        {
+            "input": "//",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "//"
+            },
+            "description": "comment with no text"
+        },
+        {
+            "input": "// some comment\rfollowed by CARRIAGE RETURN",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment"
+            },
+            "description": "comment followed by a CARRIAGE RETURN"
+        },
+        {
+            "input": "// some comment\nfollowed by LINE FEED",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment"
+            },
+            "description": "comment followed by a LINE FEED"
+        },
+        {
+            "input": "// some comment followed by NEXT LINE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment"
+            },
+            "description": "comment followed by a NEXT LINE"
+        },
+        {
+            "input": "// some comment  followed by LINE SEPARATOR",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment"
+            },
+            "description": "comment followed by a LINE SEPARATOR"
+        },
+        {
+            "input": "// some comment  followed by PARAGRAPH SEPARATOR",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment"
+            },
+            "description": "comment followed by a PARAGRAPH SEPARATOR"
+        },
+
+        {
+            "input": "// some comment  followed by SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by SPACE"
+            },
+            "description": "comment followed by a SPACE"
+        },
+        {
+            "input": "// some comment  followed by NO-BREAK SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by NO-BREAK SPACE"
+            },
+            "description": "comment followed by a NO-BREAK SPACE"
+        },
+        {
+            "input": "// some comment  followed by OGHAM SPACE MARK",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by OGHAM SPACE MARK"
+            },
+            "description": "comment followed by a OGHAM SPACE MARK"
+        },
+        {
+            "input": "// some comment  followed by EN QUAD",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by EN QUAD"
+            },
+            "description": "comment followed by a EN QUAD"
+        },
+        {
+            "input": "// some comment  followed by EM QUAD",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by EM QUAD"
+            },
+            "description": "comment followed by a EM QUAD"
+        },
+        {
+            "input": "// some comment  followed by EN SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by EN SPACE"
+            },
+            "description": "comment followed by a EN SPACE"
+        },
+        {
+            "input": "// some comment  followed by EM SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by EM SPACE"
+            },
+            "description": "comment followed by a EM SPACE"
+        },
+        {
+            "input": "// some comment  followed by THREE-PER-EM SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by THREE-PER-EM SPACE"
+            },
+            "description": "comment followed by a THREE-PER-EM SPACE"
+        },
+        {
+            "input": "// some comment  followed by FOUR-PER-EM SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by FOUR-PER-EM SPACE"
+            },
+            "description": "comment followed by a FOUR-PER-EM SPACE"
+        },
+        {
+            "input": "// some comment  followed by SIX-PER-EM SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by SIX-PER-EM SPACE"
+            },
+            "description": "comment followed by a SIX-PER-EM SPACE"
+        },
+        {
+            "input": "// some comment  followed by FIGURE SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by FIGURE SPACE"
+            },
+            "description": "comment followed by a FIGURE SPACE"
+        },
+        {
+            "input": "// some comment  followed by PUNCTUATION SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by PUNCTUATION SPACE"
+            },
+            "description": "comment followed by a PUNCTUATION SPACE"
+        },
+        {
+            "input": "// some comment  followed by THIN SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by THIN SPACE"
+            },
+            "description": "comment followed by a THIN SPACE"
+        },
+        {
+            "input": "// some comment  followed by HAIR SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by HAIR SPACE"
+            },
+            "description": "comment followed by a HAIR SPACE"
+        },
+        {
+            "input": "// some comment  followed by NARROW NO-BREAK SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by NARROW NO-BREAK SPACE"
+            },
+            "description": "comment followed by a NARROW NO-BREAK SPACE"
+        },
+        {
+            "input": "// some comment  followed by MEDIUM MATHEMATICAL SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment  followed by MEDIUM MATHEMATICAL SPACE"
+            },
+            "description": "comment followed by a MEDIUM MATHEMATICAL SPACE"
+        },
+        {
+            "input": "// some comment　 followed by IDEOGRAPHIC SPACE",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment　 followed by IDEOGRAPHIC SPACE"
+            },
+            "description": "comment followed by a IDEOGRAPHIC SPACE"
+        },
+        {
+            "input": "// some comment\t followed by HORIZONTAL TAB",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment\t followed by HORIZONTAL TAB"
+            },
+            "description": "comment followed by a HORIZONTAL TAB"
+        },
+        {
+            "input": "// some comment\u000b followed by VERTICAL TAB",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment\u000b followed by VERTICAL TAB"
+            },
+            "description": "comment followed by a VERTICAL TAB"
+        },
+        {
+            "input": "// some comment\f followed by FORM FEED",
+            "output": {
+                "tokenType": "comment",
+                "token": "single-line-comment",
+                "value": "// some comment\f followed by FORM FEED"
+            },
+            "description": "comment followed by a FORM FEED"
+        }
+    ]
+}

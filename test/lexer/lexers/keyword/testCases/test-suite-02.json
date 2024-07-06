@@ -1,0 +1,851 @@
+{
+    "description": "Single keyword followed by all kinds of delimeters.",
+    "testCases": [
+        {
+            "input": "and  followed by SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a SPACE"
+        },
+        {
+            "input": "#binary  followed by SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a SPACE"
+        },
+        {
+            "input": "and  followed by NO-BREAK SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a NO-BREAK SPACE"
+        },
+        {
+            "input": "#binary  followed by NO-BREAK SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a NO-BREAK SPACE"
+        },
+        {
+            "input": "and  followed by OGHAM SPACE MARK",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a OGHAM SPACE MARK"
+        },
+        {
+            "input": "#binary  followed by OGHAM SPACE MARK",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a OGHAM SPACE MARK"
+        },
+        {
+            "input": "and  followed by EN QUAD",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a EN QUAD"
+        },
+        {
+            "input": "#binary  followed by EN QUAD",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a EN QUAD"
+        },
+        {
+            "input": "and  followed by EM QUAD",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a EM QUAD"
+        },
+        {
+            "input": "#binary  followed by EM QUAD",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a EM QUAD"
+        },
+        {
+            "input": "and  followed by EN SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a EN SPACE"
+        },
+        {
+            "input": "#binary  followed by EN SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a EN SPACE"
+        },
+        {
+            "input": "and  followed by EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a EM SPACE"
+        },
+        {
+            "input": "#binary  followed by EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a EM SPACE"
+        },
+        {
+            "input": "and  followed by THREE-PER-EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a THREE-PER-EM SPACE"
+        },
+        {
+            "input": "#binary  followed by THREE-PER-EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a THREE-PER-EM SPACE"
+        },
+        {
+            "input": "and  followed by FOUR-PER-EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a FOUR-PER-EM SPACE"
+        },
+        {
+            "input": "#binary  followed by FOUR-PER-EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a FOUR-PER-EM SPACE"
+        },
+        {
+            "input": "and  followed by SIX-PER-EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a SIX-PER-EM SPACE"
+        },
+        {
+            "input": "#binary  followed by SIX-PER-EM SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a SIX-PER-EM SPACE"
+        },
+        {
+            "input": "and  followed by FIGURE SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a FIGURE SPACE"
+        },
+        {
+            "input": "#binary  followed by FIGURE SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a FIGURE SPACE"
+        },
+        {
+            "input": "and  followed by PUNCTUATION SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a PUNCTUATION SPACE"
+        },
+        {
+            "input": "#binary  followed by PUNCTUATION SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a PUNCTUATION SPACE"
+        },
+        {
+            "input": "and  followed by THIN SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a THIN SPACE"
+        },
+        {
+            "input": "#binary  followed by THIN SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a THIN SPACE"
+        },
+        {
+            "input": "and  followed by HAIR SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a HAIR SPACE"
+        },
+        {
+            "input": "#binary  followed by HAIR SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a HAIR SPACE"
+        },
+        {
+            "input": "and  followed by NARROW NO-BREAK SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a NARROW NO-BREAK SPACE"
+        },
+        {
+            "input": "#binary  followed by NARROW NO-BREAK SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a NARROW NO-BREAK SPACE"
+        },
+        {
+            "input": "and  followed by MEDIUM MATHEMATICAL SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a MEDIUM MATHEMATICAL SPACE"
+        },
+        {
+            "input": "#binary  followed by MEDIUM MATHEMATICAL SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a MEDIUM MATHEMATICAL SPACE"
+        },
+        {
+            "input": "and　 followed by IDEOGRAPHIC SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a IDEOGRAPHIC SPACE"
+        },
+        {
+            "input": "#binary　 followed by IDEOGRAPHIC SPACE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a IDEOGRAPHIC SPACE"
+        },
+        {
+            "input": "and    followed by HORIZONTAL TAB",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a HORIZONTAL TAB"
+        },
+        {
+            "input": "#binary    followed by HORIZONTAL TAB",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a HORIZONTAL TAB"
+        },
+        {
+            "input": "and\u000b followed by VERTICAL TAB",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a VERTICAL TAB"
+        },
+        {
+            "input": "#binary\u000b followed by VERTICAL TAB",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a VERTICAL TAB"
+        },
+        {
+            "input": "and\f followed by FORM FEED",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a FORM FEED"
+        },
+        {
+            "input": "#binary\f followed by FORM FEED",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a FORM FEED"
+        },
+        {
+            "input": "and\r\nfollowed by CARRIAGE RETURN,  LINE FEED",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a CARRIAGE RETURN,  LINE FEED"
+        },
+        {
+            "input": "#binary\r\nfollowed by CARRIAGE RETURN,  LINE FEED",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a CARRIAGE RETURN,  LINE FEED"
+        },
+        {
+            "input": "and\rfollowed by CARRIAGE RETURN",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a CARRIAGE RETURN"
+        },
+        {
+            "input": "#binary\rfollowed by CARRIAGE RETURN",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a CARRIAGE RETURN"
+        },
+        {
+            "input": "and\nfollowed by LINE FEED",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a LINE FEED"
+        },
+        {
+            "input": "#binary\nfollowed by LINE FEED",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a LINE FEED"
+        },
+        {
+            "input": "and followed by NEXT LINE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a NEXT LINE"
+        },
+        {
+            "input": "#binary followed by NEXT LINE",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a NEXT LINE"
+        },
+        {
+            "input": "and  followed by LINE SEPARATOR",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a LINE SEPARATOR"
+        },
+        {
+            "input": "#binary  followed by LINE SEPARATOR",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a LINE SEPARATOR"
+        },
+        {
+            "input": "and  followed by PARAGRAPH SEPARATOR",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a PARAGRAPH SEPARATOR"
+        },
+        {
+            "input": "#binary  followed by PARAGRAPH SEPARATOR",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a PARAGRAPH SEPARATOR"
+        },
+        {
+            "input": "and,followed by Comma",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Comma"
+        },
+        {
+            "input": "#binary,followed by Comma",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Comma"
+        },
+        {
+            "input": "and;followed by Semicolon",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Semicolon"
+        },
+        {
+            "input": "#binary;followed by Semicolon",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Semicolon"
+        },
+        {
+            "input": "and=>followed by Arrow",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Arrow"
+        },
+        {
+            "input": "#binary=>followed by Arrow",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Arrow"
+        },
+        {
+            "input": "and<> followed by NotEqual",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a NotEqual"
+        },
+        {
+            "input": "#binary<> followed by NotEqual",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a NotEqual"
+        },
+        {
+            "input": "and>= followed by GreaterThanOrEqual",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a GreaterThanOrEqual"
+        },
+        {
+            "input": "#binary>= followed by GreaterThanOrEqual",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a GreaterThanOrEqual"
+        },
+        {
+            "input": "and+ followed by Plus",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Plus"
+        },
+        {
+            "input": "#binary+ followed by Plus",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Plus"
+        },
+        {
+            "input": "and- followed by Minus",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Minus"
+        },
+        {
+            "input": "#binary- followed by Minus",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Minus"
+        },
+        {
+            "input": "and* followed by Multiply",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Multiply"
+        },
+        {
+            "input": "#binary* followed by Multiply",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Multiply"
+        },
+        {
+            "input": "and/ followed by Divide",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Divide"
+        },
+        {
+            "input": "#binary/ followed by Divide",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Divide"
+        },
+        {
+            "input": "and& followed by Ampersand",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a Ampersand"
+        },
+        {
+            "input": "#binary& followed by Ampersand",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a Ampersand"
+        },
+        {
+            "input": "and( followed by OpeningParenthesis",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a OpeningParenthesis"
+        },
+        {
+            "input": "#binary( followed by OpeningParenthesis",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a OpeningParenthesis"
+        },
+        {
+            "input": "and) followed by ClosingParenthesis",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a ClosingParenthesis"
+        },
+        {
+            "input": "#binary) followed by ClosingParenthesis",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a ClosingParenthesis"
+        },
+        {
+            "input": "and[ followed by OpeningBracket",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a OpeningBracket"
+        },
+        {
+            "input": "#binary[ followed by OpeningBracket",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a OpeningBracket"
+        },
+        {
+            "input": "and] followed by ClosingBracket",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a ClosingBracket"
+        },
+        {
+            "input": "#binary] followed by ClosingBracket",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a ClosingBracket"
+        },
+        {
+            "input": "and{ followed by OpeningBrace",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a OpeningBrace"
+        },
+        {
+            "input": "#binary{ followed by OpeningBrace",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a OpeningBrace"
+        },
+        {
+            "input": "and@ followed by AtSymbol",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a AtSymbol"
+        },
+        {
+            "input": "#binary@ followed by AtSymbol",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a AtSymbol"
+        },
+        {
+            "input": "and! followed by ExclamationMark",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a ExclamationMark"
+        },
+        {
+            "input": "#binary! followed by ExclamationMark",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a ExclamationMark"
+        },
+        {
+            "input": "and? followed by QuestionMark",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a QuestionMark"
+        },
+        {
+            "input": "#binary? followed by QuestionMark",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a QuestionMark"
+        },
+        {
+            "input": "and... followed by TripleDot",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a TripleDot"
+        },
+        {
+            "input": "#binary... followed by TripleDot",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a TripleDot"
+        },
+        {
+            "input": "and// followed by a single line comment",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a single line comment"
+        },
+        {
+            "input": "#binary// followed by a single line comment",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a single line comment"
+        },
+        {
+            "input": "and/* followed by a delimited comment */",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            },
+            "description": "keyword followed by a delimited comment */"
+        },
+        {
+            "input": "#binary/* followed by a delimited comment */",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            },
+            "description": "keyword followed by a delimited comment */"
+        }
+    ]
+}

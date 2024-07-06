@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "otherwise 2",
+            "output": {
+                "type": "otherwise-clause",
+                "id": "otherwise-clause-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "defaultExpression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "2",
+                    "literalType": "number-literal"
+                }
+            }
+        }
+    ]
+}

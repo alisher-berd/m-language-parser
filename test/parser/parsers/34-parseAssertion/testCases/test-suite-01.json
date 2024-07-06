@@ -1,0 +1,21 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "as any",
+            "output": {
+                "type": "assertion",
+                "id": "assertion-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "typeNode": {
+                    "type": "primitive-type",
+                    "id": "primitive-type-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "primitiveType": "any"
+                }
+            }
+        }
+    ]
+}

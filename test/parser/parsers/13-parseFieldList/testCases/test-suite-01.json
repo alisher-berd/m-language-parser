@@ -1,0 +1,38 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "columnName = 2, anotherCol = 4",
+            "output": {
+                "type": "field-list",
+                "id": "field-list-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "fieldList": [
+                    {
+                        "fieldName": "columnName",
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        }
+                    },
+                    {
+                        "fieldName": "anotherCol",
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "literalValue": "4",
+                            "literalType": "number-literal"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

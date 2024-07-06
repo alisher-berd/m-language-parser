@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "...",
+            "output": {
+                "type": "open-record-marker",
+                "id": "open-record-marker-0",
+                "startIndex": 0,
+                "stopIndex": 1
+            }
+        }
+    ]
+}

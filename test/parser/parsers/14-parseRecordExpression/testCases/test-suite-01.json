@@ -1,0 +1,48 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "[columnName = 2, anotherCol = 4]",
+            "output": {
+                "type": "record-expression",
+                "id": "record-expression-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "fieldList": [
+                    {
+                        "fieldName": "columnName",
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        }
+                    },
+                    {
+                        "fieldName": "anotherCol",
+                        "expression": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-7",
+                            "startIndex": 7,
+                            "stopIndex": 8,
+                            "literalValue": "4",
+                            "literalType": "number-literal"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "input": "[]",
+            "output": {
+                "type": "record-expression",
+                "id": "record-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "fieldList": []
+            }
+        }
+    ]
+}

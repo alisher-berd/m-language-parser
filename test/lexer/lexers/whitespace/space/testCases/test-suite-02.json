@@ -1,0 +1,194 @@
+{
+    "description": "Double space.",
+    "testCases": [
+        {
+            "input": "  SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "SPACE repeated 2 times"
+        },
+        {
+            "input": "  NO-BREAK SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "NO-BREAK SPACE repeated 2 times"
+        },
+        {
+            "input": "  OGHAM SPACE MARK repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "OGHAM SPACE MARK repeated 2 times"
+        },
+        {
+            "input": "  EN QUAD repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "EN QUAD repeated 2 times"
+        },
+        {
+            "input": "  EM QUAD repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "EM QUAD repeated 2 times"
+        },
+        {
+            "input": "  EN SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "EN SPACE repeated 2 times"
+        },
+        {
+            "input": "  EM SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "EM SPACE repeated 2 times"
+        },
+        {
+            "input": "  THREE-PER-EM SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "THREE-PER-EM SPACE repeated 2 times"
+        },
+        {
+            "input": "  FOUR-PER-EM SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "FOUR-PER-EM SPACE repeated 2 times"
+        },
+        {
+            "input": "  SIX-PER-EM SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "SIX-PER-EM SPACE repeated 2 times"
+        },
+        {
+            "input": "  FIGURE SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "FIGURE SPACE repeated 2 times"
+        },
+        {
+            "input": "  PUNCTUATION SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "PUNCTUATION SPACE repeated 2 times"
+        },
+        {
+            "input": "  THIN SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "THIN SPACE repeated 2 times"
+        },
+        {
+            "input": "  HAIR SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "HAIR SPACE repeated 2 times"
+        },
+        {
+            "input": "  NARROW NO-BREAK SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "NARROW NO-BREAK SPACE repeated 2 times"
+        },
+        {
+            "input": "  MEDIUM MATHEMATICAL SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            },
+            "description": "MEDIUM MATHEMATICAL SPACE repeated 2 times"
+        },
+        {
+            "input": "　　IDEOGRAPHIC SPACE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "　　"
+            },
+            "description": "IDEOGRAPHIC SPACE repeated 2 times"
+        },
+        {
+            "input": "\t\tHORIZONTAL TAB repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\t\t"
+            },
+            "description": "HORIZONTAL TAB repeated 2 times"
+        },
+        {
+            "input": "\u000b\u000bVERTICAL TAB repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\u000b\u000b"
+            },
+            "description": "VERTICAL TAB repeated 2 times"
+        },
+        {
+            "input": "\f\fFORM FEED repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\f\f"
+            },
+            "description": "FORM FEED repeated 2 times"
+        },
+        {
+            "input": "\r\n\r\nCARRIAGE RETURN, LINE FEED repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\r\n\r\n"
+            },
+            "description": "CARRIAGE RETURN, LINE FEED repeated 2 times"
+        }
+    ]
+}

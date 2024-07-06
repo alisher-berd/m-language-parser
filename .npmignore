@@ -1,0 +1,9 @@
+/node_modules
+/coverage
+/test
+.babelrc
+.gitignore
+.prettierignore
+eslint.config.mjs
+.vscode/
+.git/

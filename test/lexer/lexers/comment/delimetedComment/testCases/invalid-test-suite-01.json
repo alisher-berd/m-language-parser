@@ -1,0 +1,8 @@
+{
+    "description": "Input begins with space.",
+    "testCases": [
+        {
+            "input": "  /* delimited comment */"
+        }
+    ]
+}

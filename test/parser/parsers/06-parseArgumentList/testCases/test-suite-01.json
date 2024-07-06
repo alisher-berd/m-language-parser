@@ -1,0 +1,94 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "2, a, 4",
+            "output": {
+                "type": "argument-list",
+                "id": "argument-list-0",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "argumentList": [
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-0",
+                        "startIndex": 0,
+                        "stopIndex": 1,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    },
+                    {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-2",
+                        "startIndex": 2,
+                        "stopIndex": 3,
+                        "identifierName": "a",
+                        "isInclusive": false
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-4",
+                        "startIndex": 4,
+                        "stopIndex": 5,
+                        "literalValue": "4",
+                        "literalType": "number-literal"
+                    }
+                ]
+            }
+        },
+        {
+            "input": "2, 1, 4",
+            "output": {
+                "type": "argument-list",
+                "id": "argument-list-0",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "argumentList": [
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-0",
+                        "startIndex": 0,
+                        "stopIndex": 1,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-2",
+                        "startIndex": 2,
+                        "stopIndex": 3,
+                        "literalValue": "1",
+                        "literalType": "number-literal"
+                    },
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-4",
+                        "startIndex": 4,
+                        "stopIndex": 5,
+                        "literalValue": "4",
+                        "literalType": "number-literal"
+                    }
+                ]
+            }
+        },
+        {
+            "input": "2",
+            "output": {
+                "type": "argument-list",
+                "id": "argument-list-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "argumentList": [
+                    {
+                        "type": "literal-expression",
+                        "id": "literal-expression-0",
+                        "startIndex": 0,
+                        "stopIndex": 1,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    }
+                ]
+            }
+        }
+    ]
+}

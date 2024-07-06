@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "error 1000",
+            "output": {
+                "type": "error-raising-expression",
+                "id": "error-raising-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "1000",
+                    "literalType": "number-literal"
+                }
+            }
+        }
+    ]
+}

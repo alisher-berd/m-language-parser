@@ -1,0 +1,493 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "someIdentifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "someIdentifier"
+            }
+        },
+        {
+            "input": "some.Identifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "some.Identifier"
+            }
+        },
+        {
+            "input": "some_Identifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "some_Identifier"
+            }
+        },
+        {
+            "input": "some Identifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "some Identifier"
+            }
+        },
+        {
+            "input": "some  separated by a tab",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "some"
+            }
+        },
+        {
+            "input": "some identifier separated by blanks",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "some identifier separated by blanks"
+            }
+        },
+        {
+            "input": "some.dot identifier.dot separated.dot by.dot blanks.dot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "some.dot identifier.dot separated.dot by.dot blanks.dot"
+            }
+        },
+        {
+            "input": "1someIdentifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "1someIdentifier"
+            }
+        },
+        {
+            "input": "3some.Identifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "3some.Identifier"
+            }
+        },
+        {
+            "input": "5some_Identifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "5some_Identifier"
+            }
+        },
+        {
+            "input": "7some 7Identifier",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "7some 7Identifier"
+            }
+        },
+        {
+            "input": "1some  9separated by a tab",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "1some"
+            }
+        },
+        {
+            "input": "3some 4identifier 8separated 9by 0blanks",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "3some 4identifier 8separated 9by 0blanks"
+            }
+        },
+        {
+            "input": "and",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "and"
+            }
+        },
+        {
+            "input": "as",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "as"
+            }
+        },
+        {
+            "input": "each",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "each"
+            }
+        },
+        {
+            "input": "else",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "else"
+            }
+        },
+        {
+            "input": "error",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "error"
+            }
+        },
+        {
+            "input": "false",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "false"
+            }
+        },
+        {
+            "input": "if",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "if"
+            }
+        },
+        {
+            "input": "in",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "in"
+            }
+        },
+        {
+            "input": "is",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "is"
+            }
+        },
+        {
+            "input": "let",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "let"
+            }
+        },
+        {
+            "input": "meta",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "meta"
+            }
+        },
+        {
+            "input": "not",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "not"
+            }
+        },
+        {
+            "input": "null",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "null"
+            }
+        },
+        {
+            "input": "or",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "or"
+            }
+        },
+        {
+            "input": "otherwise",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "otherwise"
+            }
+        },
+        {
+            "input": "section",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "section"
+            }
+        },
+        {
+            "input": "shared",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "shared"
+            }
+        },
+        {
+            "input": "then",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "then"
+            }
+        },
+        {
+            "input": "true",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "true"
+            }
+        },
+        {
+            "input": "try",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "try"
+            }
+        },
+        {
+            "input": "type",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "type"
+            }
+        },
+        {
+            "input": "and.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "and.withDot"
+            }
+        },
+        {
+            "input": "as.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "as.withDot"
+            }
+        },
+        {
+            "input": "each.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "each.withDot"
+            }
+        },
+        {
+            "input": "else.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "else.withDot"
+            }
+        },
+        {
+            "input": "error.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "error.withDot"
+            }
+        },
+        {
+            "input": "false.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "false.withDot"
+            }
+        },
+        {
+            "input": "if.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "if.withDot"
+            }
+        },
+        {
+            "input": "in.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "in.withDot"
+            }
+        },
+        {
+            "input": "is.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "is.withDot"
+            }
+        },
+        {
+            "input": "let.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "let.withDot"
+            }
+        },
+        {
+            "input": "meta.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "meta.withDot"
+            }
+        },
+        {
+            "input": "not.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "not.withDot"
+            }
+        },
+        {
+            "input": "null.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "null.withDot"
+            }
+        },
+        {
+            "input": "or.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "or.withDot"
+            }
+        },
+        {
+            "input": "otherwise.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "otherwise.withDot"
+            }
+        },
+        {
+            "input": "section.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "section.withDot"
+            }
+        },
+        {
+            "input": "shared.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "shared.withDot"
+            }
+        },
+        {
+            "input": "then.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "then.withDot"
+            }
+        },
+        {
+            "input": "true.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "true.withDot"
+            }
+        },
+        {
+            "input": "try.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "try.withDot"
+            }
+        },
+        {
+            "input": "type.withDot",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "type.withDot"
+            }
+        },
+        {
+            "input": "0xffFF435",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "0xffFF435"
+            }
+        },
+        {
+            "input": "0XffABD234",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "0XffABD234"
+            }
+        },
+        {
+            "input": "0xffFF435 and some text",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "0xffFF435 and some text"
+            }
+        },
+        {
+            "input": "0XffABD234 and some text",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "0XffABD234 and some text"
+            }
+        },
+        {
+            "input": "0xotherwise435 and some text",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "0xotherwise435 and some text"
+            }
+        },
+        {
+            "input": "0Xotherwise and some text",
+            "output": {
+                "tokenType": "generalized-identifier",
+                "token": "generalized-identifier",
+                "value": "0Xotherwise and some text"
+            }
+        }
+    ]
+}

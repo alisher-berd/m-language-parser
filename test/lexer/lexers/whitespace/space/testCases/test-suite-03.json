@@ -1,0 +1,245 @@
+{
+    "description": "Random sequence of spaces.",
+    "testCases": [
+        {
+            "input": "  　     RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  　     "
+            }
+        },
+        {
+            "input": "     \u000b  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "     \u000b  "
+            }
+        },
+        {
+            "input": "   \u000b\f 　  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "   \u000b\f 　  "
+            }
+        },
+        {
+            "input": "   \t  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "   \t  "
+            }
+        },
+        {
+            "input": " \t RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " \t "
+            }
+        },
+        {
+            "input": "    　   RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "    　   "
+            }
+        },
+        {
+            "input": "\r\n       RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\r\n       "
+            }
+        },
+        {
+            "input": "    \u000b\f\t  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "    \u000b\f\t  "
+            }
+        },
+        {
+            "input": "  \f   \u000bRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  \f   \u000b"
+            }
+        },
+        {
+            "input": "  \u000bRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  \u000b"
+            }
+        },
+        {
+            "input": " \r\n   \t  \u000bRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " \r\n   \t  \u000b"
+            }
+        },
+        {
+            "input": "         RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "         "
+            }
+        },
+        {
+            "input": "\u000b \fRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\u000b \f"
+            }
+        },
+        {
+            "input": "  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            }
+        },
+        {
+            "input": " 　   　   RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " 　   　   "
+            }
+        },
+        {
+            "input": "　    \t    RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "　    \t    "
+            }
+        },
+        {
+            "input": "    RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "    "
+            }
+        },
+        {
+            "input": "\u000b     \u000b  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\u000b     \u000b  "
+            }
+        },
+        {
+            "input": "\f \u000b\u000b \f   RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\f \u000b\u000b \f   "
+            }
+        },
+        {
+            "input": "　  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "　  "
+            }
+        },
+        {
+            "input": "  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            }
+        },
+        {
+            "input": "     RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "     "
+            }
+        },
+        {
+            "input": "     \tRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "     \t"
+            }
+        },
+        {
+            "input": "\t RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "\t "
+            }
+        },
+        {
+            "input": "  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "  "
+            }
+        },
+        {
+            "input": " \u000b 　  \u000b RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " \u000b 　  \u000b "
+            }
+        },
+        {
+            "input": "   RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "   "
+            }
+        },
+        {
+            "input": " 　  \t    RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": " 　  \t    "
+            }
+        },
+        {
+            "input": "        RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "        "
+            }
+        },
+        {
+            "input": "       RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "whitespace",
+                "value": "       "
+            }
+        }
+    ]
+}

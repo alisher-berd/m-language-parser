@@ -1,0 +1,347 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "\rCARRIAGE RETURN",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r"
+            },
+            "description": "CARRIAGE RETURN"
+        },
+        {
+            "input": "\nLINE FEED",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n"
+            },
+            "description": "LINE FEED"
+        },
+        {
+            "input": "NEXT LINE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": ""
+            },
+            "description": "NEXT LINE"
+        },
+        {
+            "input": " LINE SEPARATOR",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " "
+            },
+            "description": "LINE SEPARATOR"
+        },
+        {
+            "input": " PARAGRAPH SEPARATOR",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " "
+            },
+            "description": "PARAGRAPH SEPARATOR"
+        },
+        {
+            "input": "\r\rCARRIAGE RETURN repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r\r"
+            },
+            "description": "CARRIAGE RETURN repeated 2 times"
+        },
+        {
+            "input": "\n\nLINE FEED repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n\n"
+            },
+            "description": "LINE FEED repeated 2 times"
+        },
+        {
+            "input": "NEXT LINE repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": ""
+            },
+            "description": "NEXT LINE repeated 2 times"
+        },
+        {
+            "input": "  LINE SEPARATOR repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "  "
+            },
+            "description": "LINE SEPARATOR repeated 2 times"
+        },
+        {
+            "input": "  PARAGRAPH SEPARATOR repeated 2 times",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "  "
+            },
+            "description": "PARAGRAPH SEPARATOR repeated 2 times"
+        },
+        {
+            "input": "\n  \r\r RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n  \r\r "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " \r\n \r \r RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " \r\n \r \r "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n    \nRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n    \n"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n\r RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n\r "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "  "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n\n \r\nRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n\n \r\n"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " \n\r\r \r RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " \n\r\r \r "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "   \rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "   \r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "   \n\n RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "   \n\n "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\r RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\r  \n \n  RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r  \n \n  "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n\n RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n\n "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n\r \n RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n\r \n "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " \rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " \r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "  \r\n  \rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "  \r\n  \r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " \n\r \r \r\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " \n\r \r \r\r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\r \r\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r \r\r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "   \n\r  \nRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "   \n\r  \n"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "    \r  \nRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "    \r  \n"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " \r\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " \r\r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n\r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "     RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "     "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": " RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": " "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\n   \r\n RANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\n   \r\n "
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "\r\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "\r\r"
+            },
+            "description": "random sequence"
+        },
+        {
+            "input": "   \r\r\rRANDOM SEQUENCE",
+            "output": {
+                "tokenType": "whitespace",
+                "token": "new-line",
+                "value": "   \r\r\r"
+            },
+            "description": "random sequence"
+        }
+    ]
+}

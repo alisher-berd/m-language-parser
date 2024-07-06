@@ -1,0 +1,14 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "...",
+            "output": {
+                "type": "not-implemented-expression",
+                "id": "not-implemented-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1
+            }
+        }
+    ]
+}

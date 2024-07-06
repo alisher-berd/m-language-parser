@@ -1,0 +1,60 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "optional col1 as binary, optional col2 as any",
+            "output": {
+                "type": "optional-parameter-specification-list",
+                "id": "optional-parameter-specification-list-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "optionalParameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    },
+                    {
+                        "parameterName": "col2",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-8",
+                            "startIndex": 8,
+                            "stopIndex": 9,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        },
+        {
+            "input": "optional col1 as binary",
+            "output": {
+                "type": "optional-parameter-specification-list",
+                "id": "optional-parameter-specification-list-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "optionalParameterSpecificationList": [
+                    {
+                        "parameterName": "col1",
+                        "parameterType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-3",
+                            "startIndex": 3,
+                            "stopIndex": 4,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

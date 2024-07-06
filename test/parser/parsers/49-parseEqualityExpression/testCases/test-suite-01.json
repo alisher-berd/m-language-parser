@@ -1,0 +1,177 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "1 * 2 < 3 + 4   <>    1 / 4",
+            "output": {
+                "type": "equality-expression",
+                "id": "equality-expression-0",
+                "startIndex": 0,
+                "stopIndex": 11,
+                "leftOperand": {
+                    "type": "relational-expression",
+                    "id": "relational-expression-0",
+                    "startIndex": 0,
+                    "stopIndex": 7,
+                    "leftOperand": {
+                        "type": "multiplicative-expression",
+                        "id": "multiplicative-expression-0",
+                        "startIndex": 0,
+                        "stopIndex": 3,
+                        "leftOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-0",
+                            "startIndex": 0,
+                            "stopIndex": 1,
+                            "literalValue": "1",
+                            "literalType": "number-literal"
+                        },
+                        "operator": "multiply",
+                        "rightOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        }
+                    },
+                    "operator": "less-than",
+                    "rightOperand": {
+                        "type": "additive-expression",
+                        "id": "additive-expression-4",
+                        "startIndex": 4,
+                        "stopIndex": 7,
+                        "leftOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-4",
+                            "startIndex": 4,
+                            "stopIndex": 5,
+                            "literalValue": "3",
+                            "literalType": "number-literal"
+                        },
+                        "operator": "plus",
+                        "rightOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "literalValue": "4",
+                            "literalType": "number-literal"
+                        }
+                    }
+                },
+                "operator": "not-equal",
+                "rightOperand": {
+                    "type": "multiplicative-expression",
+                    "id": "multiplicative-expression-8",
+                    "startIndex": 8,
+                    "stopIndex": 11,
+                    "leftOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-8",
+                        "startIndex": 8,
+                        "stopIndex": 9,
+                        "literalValue": "1",
+                        "literalType": "number-literal"
+                    },
+                    "operator": "divide",
+                    "rightOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-10",
+                        "startIndex": 10,
+                        "stopIndex": 11,
+                        "literalValue": "4",
+                        "literalType": "number-literal"
+                    }
+                }
+            }
+        },
+        {
+            "input": "1 * 2 < 3 + 4   =   1 / 4",
+            "output": {
+                "type": "equality-expression",
+                "id": "equality-expression-0",
+                "startIndex": 0,
+                "stopIndex": 11,
+                "leftOperand": {
+                    "type": "relational-expression",
+                    "id": "relational-expression-0",
+                    "startIndex": 0,
+                    "stopIndex": 7,
+                    "leftOperand": {
+                        "type": "multiplicative-expression",
+                        "id": "multiplicative-expression-0",
+                        "startIndex": 0,
+                        "stopIndex": 3,
+                        "leftOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-0",
+                            "startIndex": 0,
+                            "stopIndex": 1,
+                            "literalValue": "1",
+                            "literalType": "number-literal"
+                        },
+                        "operator": "multiply",
+                        "rightOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-2",
+                            "startIndex": 2,
+                            "stopIndex": 3,
+                            "literalValue": "2",
+                            "literalType": "number-literal"
+                        }
+                    },
+                    "operator": "less-than",
+                    "rightOperand": {
+                        "type": "additive-expression",
+                        "id": "additive-expression-4",
+                        "startIndex": 4,
+                        "stopIndex": 7,
+                        "leftOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-4",
+                            "startIndex": 4,
+                            "stopIndex": 5,
+                            "literalValue": "3",
+                            "literalType": "number-literal"
+                        },
+                        "operator": "plus",
+                        "rightOperand": {
+                            "type": "literal-expression",
+                            "id": "literal-expression-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "literalValue": "4",
+                            "literalType": "number-literal"
+                        }
+                    }
+                },
+                "operator": "equal",
+                "rightOperand": {
+                    "type": "multiplicative-expression",
+                    "id": "multiplicative-expression-8",
+                    "startIndex": 8,
+                    "stopIndex": 11,
+                    "leftOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-8",
+                        "startIndex": 8,
+                        "stopIndex": 9,
+                        "literalValue": "1",
+                        "literalType": "number-literal"
+                    },
+                    "operator": "divide",
+                    "rightOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-10",
+                        "startIndex": 10,
+                        "stopIndex": 11,
+                        "literalValue": "4",
+                        "literalType": "number-literal"
+                    }
+                }
+            }
+        }
+    ]
+}

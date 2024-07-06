@@ -1,0 +1,141 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "[columnName]?",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": "columnName",
+                "implicitTargetProjection": null,
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[let]?",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": "let",
+                "implicitTargetProjection": null,
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[column name]",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": "column name",
+                "implicitTargetProjection": null,
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "[tableName.columnName]?",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": "tableName.columnName",
+                "implicitTargetProjection": null,
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[#\"Column name\"]",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": "#\"Column name\"",
+                "implicitTargetProjection": null,
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "[[columnName], [columnName]]",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": null,
+                "implicitTargetProjection": ["columnName", "columnName"],
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "[[let], [let]]?",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": null,
+                "implicitTargetProjection": ["let", "let"],
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[[column name], [column name]]",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 11,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": null,
+                "implicitTargetProjection": ["column name", "column name"],
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "[[tableName.columnName], [tableName.columnName]]?",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 10,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": null,
+                "implicitTargetProjection": [
+                    "tableName.columnName",
+                    "tableName.columnName"
+                ],
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "[[#\"Column name\"], [#\"Column name\"]]",
+            "output": {
+                "type": "field-access-expression",
+                "id": "field-access-expression-0",
+                "startIndex": 0,
+                "stopIndex": 9,
+                "selectedPrimaryExpression": null,
+                "implicitTargetFieldSelection": null,
+                "implicitTargetProjection": [
+                    "#\"Column name\"",
+                    "#\"Column name\""
+                ],
+                "isOptionalSelection": false
+            }
+        }
+    ]
+}

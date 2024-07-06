@@ -1,0 +1,88 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "[...]",
+            "output": {
+                "type": "record-type",
+                "id": "record-type-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "hasOpenRecordMarker": true,
+                "fieldSpecificationList": []
+            }
+        },
+        {
+            "input": "[]",
+            "output": {
+                "type": "record-type",
+                "id": "record-type-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "hasOpenRecordMarker": false,
+                "fieldSpecificationList": []
+            }
+        },
+        {
+            "input": "[colName, optional colName = binary, optional colName = any]",
+            "output": {
+                "type": "record-type",
+                "id": "record-type-0",
+                "startIndex": 0,
+                "stopIndex": 13,
+                "hasOpenRecordMarker": false,
+                "fieldSpecificationList": [
+                    {
+                        "fieldName": "colName",
+                        "fieldType": null,
+                        "isOptional": false
+                    },
+                    {
+                        "fieldName": "colName",
+                        "fieldType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-6",
+                            "startIndex": 6,
+                            "stopIndex": 7,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": true
+                    },
+                    {
+                        "fieldName": "colName",
+                        "fieldType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-11",
+                            "startIndex": 11,
+                            "stopIndex": 12,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        },
+        {
+            "input": "[colName, optional colName, ...]",
+            "output": {
+                "type": "record-type",
+                "id": "record-type-0",
+                "startIndex": 0,
+                "stopIndex": 8,
+                "hasOpenRecordMarker": true,
+                "fieldSpecificationList": [
+                    {
+                        "fieldName": "colName",
+                        "fieldType": null,
+                        "isOptional": false
+                    },
+                    {
+                        "fieldName": "colName",
+                        "fieldType": null,
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

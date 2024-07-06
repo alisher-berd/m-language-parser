@@ -1,0 +1,47 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "colName",
+            "output": {
+                "type": "field-specification",
+                "id": "field-specification-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "fieldName": "colName",
+                "fieldType": null,
+                "isOptional": false
+            }
+        },
+        {
+            "input": "optional colName",
+            "output": {
+                "type": "field-specification",
+                "id": "field-specification-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "fieldName": "colName",
+                "fieldType": null,
+                "isOptional": true
+            }
+        },
+        {
+            "input": "optional colName = any",
+            "output": {
+                "type": "field-specification",
+                "id": "field-specification-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fieldName": "colName",
+                "fieldType": {
+                    "type": "primitive-type",
+                    "id": "primitive-type-3",
+                    "startIndex": 3,
+                    "stopIndex": 4,
+                    "primitiveType": "any"
+                },
+                "isOptional": true
+            }
+        }
+    ]
+}

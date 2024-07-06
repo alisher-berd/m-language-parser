@@ -1,0 +1,41 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "optional col1 as binary",
+            "output": {
+                "type": "parameter-specification",
+                "id": "parameter-specification-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "parameterName": "col1",
+                "parameterType": {
+                    "type": "primitive-type",
+                    "id": "primitive-type-3",
+                    "startIndex": 3,
+                    "stopIndex": 4,
+                    "primitiveType": "binary"
+                },
+                "isOptional": true
+            }
+        },
+        {
+            "input": "optional col2 as any",
+            "output": {
+                "type": "parameter-specification",
+                "id": "parameter-specification-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "parameterName": "col2",
+                "parameterType": {
+                    "type": "primitive-type",
+                    "id": "primitive-type-3",
+                    "startIndex": 3,
+                    "stopIndex": 4,
+                    "primitiveType": "any"
+                },
+                "isOptional": true
+            }
+        }
+    ]
+}

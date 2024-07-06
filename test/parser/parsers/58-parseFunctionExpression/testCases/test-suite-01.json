@@ -1,0 +1,101 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "(col1 as nullable binary, optional col2 as any) as table => 1000",
+            "output": {
+                "type": "function-expression",
+                "id": "function-expression-0",
+                "startIndex": 0,
+                "stopIndex": 15,
+                "fixedParameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    }
+                ],
+                "optionalParameterList": [
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    }
+                ],
+                "parameterList": [
+                    {
+                        "parameterName": "col1",
+                        "nullableFlag": true,
+                        "primitiveType": "binary",
+                        "isOptional": false
+                    },
+                    {
+                        "parameterName": "col2",
+                        "nullableFlag": false,
+                        "primitiveType": "any",
+                        "isOptional": true
+                    }
+                ],
+                "returnType": {
+                    "nullableFlag": false,
+                    "primitiveType": "table"
+                },
+                "functionBody": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-14",
+                    "startIndex": 14,
+                    "stopIndex": 15,
+                    "literalValue": "1000",
+                    "literalType": "number-literal"
+                }
+            }
+        },
+        {
+            "input": "() => 1000",
+            "output": {
+                "type": "function-expression",
+                "id": "function-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "fixedParameterList": [],
+                "optionalParameterList": [],
+                "parameterList": [],
+                "returnType": null,
+                "functionBody": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-3",
+                    "startIndex": 3,
+                    "stopIndex": 4,
+                    "literalValue": "1000",
+                    "literalType": "number-literal"
+                }
+            }
+        },
+        {
+            "input": "() as nullable binary => 1000",
+            "output": {
+                "type": "function-expression",
+                "id": "function-expression-0",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "fixedParameterList": [],
+                "optionalParameterList": [],
+                "parameterList": [],
+                "returnType": {
+                    "nullableFlag": true,
+                    "primitiveType": "binary"
+                },
+                "functionBody": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-6",
+                    "startIndex": 6,
+                    "stopIndex": 7,
+                    "literalValue": "1000",
+                    "literalType": "number-literal"
+                }
+            }
+        }
+    ]
+}

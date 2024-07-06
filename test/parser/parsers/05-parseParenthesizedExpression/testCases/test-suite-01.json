@@ -1,0 +1,419 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "(...)",
+            "output": {
+                "type": "not-implemented-expression",
+                "id": "not-implemented-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3
+            }
+        },
+        {
+            "input": "(sectionName!variableName)",
+            "output": {
+                "type": "section-access-expression",
+                "id": "section-access-expression-1",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "firstIdentifierName": "sectionName",
+                "secondIdentifierName": "variableName"
+            }
+        },
+        {
+            "input": "(a)",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "identifierName": "a",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "(@a)",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "identifierName": "a",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "(columnName)",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "identifierName": "columnName",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "(@columnName)",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "identifierName": "columnName",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "(#datetimezone)",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "identifierName": "#datetimezone",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "(#\"1998 Sales\")",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "identifierName": "#\"1998 Sales\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "(@#\"1998 Sales\")",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-1",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "identifierName": "#\"1998 Sales\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "(123)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "123",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(.123e+67)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": ".123e+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(123.123e67)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "123.123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(0xffFF435)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "0xffFF435",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(\"some text\")",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "\"some text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "(\"with \"\"quoted text\"\" and # hash\")",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "\"with \"\"quoted text\"\" and # hash\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "(\"some #(cr) text\")",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "\"some #(cr) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "(false)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "false",
+                "literalType": "logical-literal"
+            }
+        },
+        {
+            "input": "(true)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "true",
+                "literalType": "logical-literal"
+            }
+        },
+        {
+            "input": "(null)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "null",
+                "literalType": "null-literal"
+            }
+        },
+        {
+            "input": "((...))",
+            "output": {
+                "type": "not-implemented-expression",
+                "id": "not-implemented-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5
+            }
+        },
+        {
+            "input": "((sectionName!variableName))",
+            "output": {
+                "type": "section-access-expression",
+                "id": "section-access-expression-2",
+                "startIndex": 0,
+                "stopIndex": 7,
+                "firstIdentifierName": "sectionName",
+                "secondIdentifierName": "variableName"
+            }
+        },
+        {
+            "input": "((a))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "identifierName": "a",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "((@a))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 6,
+                "identifierName": "a",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "((columnName))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "identifierName": "columnName",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "((@columnName))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 6,
+                "identifierName": "columnName",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "((#datetimezone))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "identifierName": "#datetimezone",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "((#\"1998 Sales\"))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "identifierName": "#\"1998 Sales\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "((@#\"1998 Sales\"))",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-2",
+                "startIndex": 0,
+                "stopIndex": 6,
+                "identifierName": "#\"1998 Sales\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "(123)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "123",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(.123e+67)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": ".123e+67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(123.123e67)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "123.123e67",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "(0xffFF435)",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-1",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "literalValue": "0xffFF435",
+                "literalType": "number-literal"
+            }
+        },
+        {
+            "input": "((\"some text\"))",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "literalValue": "\"some text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "((\"with \"\"quoted text\"\" and # hash\"))",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "literalValue": "\"with \"\"quoted text\"\" and # hash\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "((\"some #(cr) text\"))",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "literalValue": "\"some #(cr) text\"",
+                "literalType": "text-literal"
+            }
+        },
+        {
+            "input": "((false))",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "literalValue": "false",
+                "literalType": "logical-literal"
+            }
+        },
+        {
+            "input": "((true))",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "literalValue": "true",
+                "literalType": "logical-literal"
+            }
+        },
+        {
+            "input": "((null))",
+            "output": {
+                "type": "literal-expression",
+                "id": "literal-expression-2",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "literalValue": "null",
+                "literalType": "null-literal"
+            }
+        }
+    ]
+}

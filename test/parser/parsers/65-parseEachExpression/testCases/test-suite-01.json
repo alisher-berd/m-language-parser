@@ -1,0 +1,54 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "each a * 100",
+            "output": {
+                "type": "each-expression",
+                "id": "each-expression-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "expression": {
+                    "type": "multiplicative-expression",
+                    "id": "multiplicative-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 4,
+                    "leftOperand": {
+                        "type": "identifier-expression",
+                        "id": "identifier-expression-1",
+                        "startIndex": 1,
+                        "stopIndex": 2,
+                        "identifierName": "a",
+                        "isInclusive": false
+                    },
+                    "operator": "multiply",
+                    "rightOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-3",
+                        "startIndex": 3,
+                        "stopIndex": 4,
+                        "literalValue": "100",
+                        "literalType": "number-literal"
+                    }
+                }
+            }
+        },
+        {
+            "input": "each 100",
+            "output": {
+                "type": "each-expression",
+                "id": "each-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "expression": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "100",
+                    "literalType": "number-literal"
+                }
+            }
+        }
+    ]
+}

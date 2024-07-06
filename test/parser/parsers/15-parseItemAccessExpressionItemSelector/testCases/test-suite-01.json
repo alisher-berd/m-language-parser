@@ -1,0 +1,92 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "{2}",
+            "output": {
+                "type": "item-access-expression-item-selector",
+                "id": "item-access-expression-item-selector-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "itemSelector": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "2",
+                    "literalType": "number-literal"
+                },
+                "isOptionalSelection": false
+            }
+        },
+        {
+            "input": "{2}?",
+            "output": {
+                "type": "item-access-expression-item-selector",
+                "id": "item-access-expression-item-selector-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "itemSelector": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "literalValue": "2",
+                    "literalType": "number-literal"
+                },
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "{2+2}?",
+            "output": {
+                "type": "item-access-expression-item-selector",
+                "id": "item-access-expression-item-selector-0",
+                "startIndex": 0,
+                "stopIndex": 6,
+                "itemSelector": {
+                    "type": "additive-expression",
+                    "id": "additive-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 4,
+                    "leftOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-1",
+                        "startIndex": 1,
+                        "stopIndex": 2,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    },
+                    "operator": "plus",
+                    "rightOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-3",
+                        "startIndex": 3,
+                        "stopIndex": 4,
+                        "literalValue": "2",
+                        "literalType": "number-literal"
+                    }
+                },
+                "isOptionalSelection": true
+            }
+        },
+        {
+            "input": "{columns}",
+            "output": {
+                "type": "item-access-expression-item-selector",
+                "id": "item-access-expression-item-selector-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "itemSelector": {
+                    "type": "identifier-expression",
+                    "id": "identifier-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 2,
+                    "identifierName": "columns",
+                    "isInclusive": false
+                },
+                "isOptionalSelection": false
+            }
+        }
+    ]
+}

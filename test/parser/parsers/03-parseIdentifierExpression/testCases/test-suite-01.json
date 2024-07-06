@@ -1,0 +1,1149 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "columnName",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "columnName",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "@columnName",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "columnName",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "#binary",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#binary",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#datetimezone",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#datetimezone",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#datetime",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#datetime",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#date",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#date",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#duration",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#duration",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#table",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#table",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#time",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#time",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "a",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "a",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "someIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "someIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "some_Identifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "some_Identifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "some Identifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "some",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "identifier1.identifier2.identifer3",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "identifier1.identifier2.identifer3",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "_identifier1._identifier2._identifer3",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "_identifier1._identifier2._identifer3",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "andSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "andSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "asSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "asSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "eachSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "eachSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "elseSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "elseSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "errorSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "errorSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "falseSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "falseSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "ifSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "ifSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "inSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "inSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "isSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "isSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "letSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "letSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "metaSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "metaSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "notSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "notSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "nullSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "nullSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "orSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "orSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "otherwiseSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "otherwiseSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "sectionSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "sectionSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "sharedSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "sharedSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "thenSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "thenSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "trueSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "trueSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "trySomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "trySomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "typeSomeIdentifier",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "typeSomeIdentifier",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"1998 Sales\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"1998 Sales\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"A + B\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"A + B\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"and\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"and\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"as\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"as\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"each\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"each\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"else\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"else\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"error\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"error\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"false\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"false\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"if\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"if\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"in\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"in\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"is\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"is\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"let\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"let\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"meta\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"meta\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"not\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"not\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"null\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"null\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"or\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"or\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"otherwise\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"otherwise\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"section\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"section\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"shared\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"shared\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"then\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"then\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"true\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"true\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"try\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"try\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"type\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"type\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#binary\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#binary\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#datetimezone\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#datetimezone\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#datetime\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#datetime\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#date\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#date\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#duration\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#duration\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#infinity\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#infinity\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#nan\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#nan\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#sections\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#sections\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#shared\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#shared\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#table\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#table\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "#\"#time\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "identifierName": "#\"#time\"",
+                "isInclusive": false
+            }
+        },
+        {
+            "input": "@#\"1998 Sales\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"1998 Sales\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"A + B\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"A + B\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"and\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"and\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"as\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"as\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"each\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"each\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"else\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"else\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"error\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"error\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"false\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"false\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"if\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"if\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"in\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"in\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"is\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"is\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"let\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"let\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"meta\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"meta\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"not\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"not\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"null\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"null\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"or\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"or\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"otherwise\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"otherwise\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"section\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"section\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"shared\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"shared\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"then\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"then\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"true\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"true\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"try\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"try\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"type\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"type\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#binary\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#binary\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#datetimezone\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#datetimezone\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#datetime\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#datetime\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#date\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#date\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#duration\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#duration\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#infinity\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#infinity\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#nan\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#nan\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#sections\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#sections\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#shared\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#shared\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#table\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#table\"",
+                "isInclusive": true
+            }
+        },
+        {
+            "input": "@#\"#time\"",
+            "output": {
+                "type": "identifier-expression",
+                "id": "identifier-expression-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "identifierName": "#\"#time\"",
+                "isInclusive": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "table []",
+            "output": {
+                "type": "table-type",
+                "id": "table-type-0",
+                "startIndex": 0,
+                "stopIndex": 3,
+                "fieldSpecificationList": []
+            }
+        },
+        {
+            "input": "table [colName = binary, optional colName, optional colName = any]",
+            "output": {
+                "type": "table-type",
+                "id": "table-type-0",
+                "startIndex": 0,
+                "stopIndex": 14,
+                "fieldSpecificationList": [
+                    {
+                        "fieldName": "colName",
+                        "fieldType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-4",
+                            "startIndex": 4,
+                            "stopIndex": 5,
+                            "primitiveType": "binary"
+                        },
+                        "isOptional": false
+                    },
+                    {
+                        "fieldName": "colName",
+                        "fieldType": null,
+                        "isOptional": true
+                    },
+                    {
+                        "fieldName": "colName",
+                        "fieldType": {
+                            "type": "primitive-type",
+                            "id": "primitive-type-12",
+                            "startIndex": 12,
+                            "stopIndex": 13,
+                            "primitiveType": "any"
+                        },
+                        "isOptional": true
+                    }
+                ]
+            }
+        }
+    ]
+}

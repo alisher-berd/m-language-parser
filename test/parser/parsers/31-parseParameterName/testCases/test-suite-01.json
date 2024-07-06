@@ -1,0 +1,25 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "colName",
+            "output": {
+                "type": "parameter-name",
+                "id": "parameter-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "parameterName": "colName"
+            }
+        },
+        {
+            "input": "#\"col name\"",
+            "output": {
+                "type": "parameter-name",
+                "id": "parameter-name-0",
+                "startIndex": 0,
+                "stopIndex": 1,
+                "parameterName": "#\"col name\""
+            }
+        }
+    ]
+}

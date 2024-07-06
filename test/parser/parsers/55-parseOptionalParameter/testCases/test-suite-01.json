@@ -1,0 +1,44 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "optional col1 as nullable binary",
+            "output": {
+                "type": "parameter",
+                "id": "parameter-0",
+                "startIndex": 0,
+                "stopIndex": 5,
+                "parameterName": "col1",
+                "nullableFlag": true,
+                "primitiveType": "binary",
+                "isOptional": true
+            }
+        },
+        {
+            "input": "optional col2 as any",
+            "output": {
+                "type": "parameter",
+                "id": "parameter-0",
+                "startIndex": 0,
+                "stopIndex": 4,
+                "parameterName": "col2",
+                "nullableFlag": false,
+                "primitiveType": "any",
+                "isOptional": true
+            }
+        },
+        {
+            "input": "optional col3",
+            "output": {
+                "type": "parameter",
+                "id": "parameter-0",
+                "startIndex": 0,
+                "stopIndex": 2,
+                "parameterName": "col3",
+                "nullableFlag": null,
+                "primitiveType": null,
+                "isOptional": true
+            }
+        }
+    ]
+}

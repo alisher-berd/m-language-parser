@@ -1,0 +1,261 @@
+{
+    "description": "Single keyword.",
+    "testCases": [
+        {
+            "input": "and",
+            "output": {
+                "tokenType": "keyword",
+                "token": "and",
+                "value": "and"
+            }
+        },
+        {
+            "input": "as",
+            "output": {
+                "tokenType": "keyword",
+                "token": "as",
+                "value": "as"
+            }
+        },
+        {
+            "input": "each",
+            "output": {
+                "tokenType": "keyword",
+                "token": "each",
+                "value": "each"
+            }
+        },
+        {
+            "input": "else",
+            "output": {
+                "tokenType": "keyword",
+                "token": "else",
+                "value": "else"
+            }
+        },
+        {
+            "input": "error",
+            "output": {
+                "tokenType": "keyword",
+                "token": "error",
+                "value": "error"
+            }
+        },
+        {
+            "input": "false",
+            "output": {
+                "tokenType": "literal",
+                "token": "logical-literal",
+                "value": "false"
+            }
+        },
+        {
+            "input": "if",
+            "output": {
+                "tokenType": "keyword",
+                "token": "if",
+                "value": "if"
+            }
+        },
+        {
+            "input": "in",
+            "output": {
+                "tokenType": "keyword",
+                "token": "in",
+                "value": "in"
+            }
+        },
+        {
+            "input": "is",
+            "output": {
+                "tokenType": "keyword",
+                "token": "is",
+                "value": "is"
+            }
+        },
+        {
+            "input": "let",
+            "output": {
+                "tokenType": "keyword",
+                "token": "let",
+                "value": "let"
+            }
+        },
+        {
+            "input": "meta",
+            "output": {
+                "tokenType": "keyword",
+                "token": "meta",
+                "value": "meta"
+            }
+        },
+        {
+            "input": "not",
+            "output": {
+                "tokenType": "keyword",
+                "token": "not",
+                "value": "not"
+            }
+        },
+        {
+            "input": "null",
+            "output": {
+                "tokenType": "literal",
+                "token": "null-literal",
+                "value": "null"
+            }
+        },
+        {
+            "input": "or",
+            "output": {
+                "tokenType": "keyword",
+                "token": "or",
+                "value": "or"
+            }
+        },
+        {
+            "input": "otherwise",
+            "output": {
+                "tokenType": "keyword",
+                "token": "otherwise",
+                "value": "otherwise"
+            }
+        },
+        {
+            "input": "section",
+            "output": {
+                "tokenType": "keyword",
+                "token": "section",
+                "value": "section"
+            }
+        },
+        {
+            "input": "shared",
+            "output": {
+                "tokenType": "keyword",
+                "token": "shared",
+                "value": "shared"
+            }
+        },
+        {
+            "input": "then",
+            "output": {
+                "tokenType": "keyword",
+                "token": "then",
+                "value": "then"
+            }
+        },
+        {
+            "input": "true",
+            "output": {
+                "tokenType": "literal",
+                "token": "logical-literal",
+                "value": "true"
+            }
+        },
+        {
+            "input": "try",
+            "output": {
+                "tokenType": "keyword",
+                "token": "try",
+                "value": "try"
+            }
+        },
+        {
+            "input": "type",
+            "output": {
+                "tokenType": "keyword",
+                "token": "type",
+                "value": "type"
+            }
+        },
+        {
+            "input": "#binary",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#binary",
+                "value": "#binary"
+            }
+        },
+        {
+            "input": "#datetimezone",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#datetimezone",
+                "value": "#datetimezone"
+            }
+        },
+        {
+            "input": "#datetime",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#datetime",
+                "value": "#datetime"
+            }
+        },
+        {
+            "input": "#date",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#date",
+                "value": "#date"
+            }
+        },
+        {
+            "input": "#duration",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#duration",
+                "value": "#duration"
+            }
+        },
+        {
+            "input": "#infinity",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#infinity",
+                "value": "#infinity"
+            }
+        },
+        {
+            "input": "#nan",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#nan",
+                "value": "#nan"
+            }
+        },
+        {
+            "input": "#sections",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#sections",
+                "value": "#sections"
+            }
+        },
+        {
+            "input": "#shared",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#shared",
+                "value": "#shared"
+            }
+        },
+        {
+            "input": "#table",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#table",
+                "value": "#table"
+            }
+        },
+        {
+            "input": "#time",
+            "output": {
+                "tokenType": "keyword",
+                "token": "#time",
+                "value": "#time"
+            }
+        }
+    ]
+}

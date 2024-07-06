@@ -1,0 +1,44 @@
+{
+    "description": "",
+    "testCases": [
+        {
+            "input": "true and false and true",
+            "output": {
+                "type": "logical-and-expression",
+                "id": "logical-and-expression-3",
+                "startIndex": 3,
+                "stopIndex": 5,
+                "leftOperand": {
+                    "type": "logical-and-expression",
+                    "id": "logical-and-expression-1",
+                    "startIndex": 1,
+                    "stopIndex": 3,
+                    "leftOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-0",
+                        "startIndex": 0,
+                        "stopIndex": 1,
+                        "literalValue": "true",
+                        "literalType": "logical-literal"
+                    },
+                    "rightOperand": {
+                        "type": "literal-expression",
+                        "id": "literal-expression-2",
+                        "startIndex": 2,
+                        "stopIndex": 3,
+                        "literalValue": "false",
+                        "literalType": "logical-literal"
+                    }
+                },
+                "rightOperand": {
+                    "type": "literal-expression",
+                    "id": "literal-expression-4",
+                    "startIndex": 4,
+                    "stopIndex": 5,
+                    "literalValue": "true",
+                    "literalType": "logical-literal"
+                }
+            }
+        }
+    ]
+}
