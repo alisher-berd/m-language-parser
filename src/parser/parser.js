@@ -42,7 +42,8 @@ function filterTokens(tokens) {
     return filteredTokens;
 }
 
-function parse(tokens) {
+function parse(inputTokens) {
+    let tokens = inputTokens.map((token) => ({ ...token }));
     tokens = filterTokens(tokens);
 
     let node = null;
